@@ -1,0 +1,16 @@
+[
+  {
+    "source_ticket_code": "TSTA",
+    "source_business_code": "01",
+    "source_store_code": "0123",
+    "source_ticket_date": "2026-06-18",
+    "source_status_code": "9"
+  },
+  {
+    "source_ticket_code": "TSTB",
+    "source_business_code": "01",
+    "source_store_code": "0456",
+    "source_ticket_date": "2026-06-18",
+    "source_status_code": "7"
+  }
+]

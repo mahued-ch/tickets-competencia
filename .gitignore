@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+node_modules/
+*.log
+*.err
+backend/data/inbound/ARCHIVE/
+backend/data/inbound/ERROR/
+backend/storage/files/
+.DS_Store

@@ -1,0 +1,11 @@
+{
+  "batch_code": "20260618_090000",
+  "generated_at": "2026-06-18T09:00:00-06:00",
+  "source_system": "AS400",
+  "files": [
+    {"file_type": "HEADER", "file_name": "header_20260618_090000.json", "record_count": 2},
+    {"file_type": "ITEM", "file_name": "items_20260618_090000.json", "record_count": 3},
+    {"file_type": "STORE", "file_name": "stores_20260618_090000.json", "record_count": 3}
+  ],
+  "layout_version": "1.0"
+}
