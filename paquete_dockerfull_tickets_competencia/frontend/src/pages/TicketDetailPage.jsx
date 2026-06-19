@@ -7,7 +7,7 @@ import StatusBadge from '../ui/StatusBadge'
 
 export default function TicketDetailPage() {
   const { ticketId } = useParams()
-  const { demoUser, currentUser } = useAuth()
+  const { currentUser } = useAuth()
   const [detail, setDetail] = useState(null)
   const [items, setItems] = useState([])
   const [stores, setStores] = useState([])
@@ -23,10 +23,10 @@ export default function TicketDetailPage() {
     setMessage('')
     try {
       const [d, i, s, sf] = await Promise.all([
-        getTicketApi(demoUser, ticketId),
-        getTicketItemsApi(demoUser, ticketId),
-        getTicketStoresApi(demoUser, ticketId),
-        getActiveScanFileApi(demoUser, ticketId),
+        getTicketApi(ticketId),
+        getTicketItemsApi(ticketId),
+        getTicketStoresApi(ticketId),
+        getActiveScanFileApi(ticketId),
       ])
       setDetail(d.data?.data || null)
       setItems(i.data?.data || [])
@@ -49,7 +49,7 @@ export default function TicketDetailPage() {
     setUploading(true)
     setMessage('')
     try {
-      await uploadScanFileApi(demoUser, ticketId, form)
+      await uploadScanFileApi(ticketId, form)
       setMessage('Archivo cargado/reemplazado correctamente')
       setSelectedFile(null)
       setNotes('')
@@ -65,7 +65,7 @@ export default function TicketDetailPage() {
     if (!confirm('Una vez confirmado, no podra reemplazarse. ¿Desea continuar?')) return
     setMessage('')
     try {
-      await confirmScanFileApi(demoUser, ticketId, { notes: 'Confirmado desde starter frontend' })
+      await confirmScanFileApi(ticketId, { notes: 'Confirmado desde starter frontend' })
       setMessage('Archivo confirmado correctamente')
       await load()
     } catch (err) {
@@ -76,7 +76,7 @@ export default function TicketDetailPage() {
   const handleViewFile = async () => {
     setMessage('')
     try {
-      const blob = await fetchScanFileBlob(demoUser, ticketId)
+      const blob = await fetchScanFileBlob(ticketId)
       const url = URL.createObjectURL(blob)
       window.open(url, '_blank', 'noopener,noreferrer')
       setTimeout(() => URL.revokeObjectURL(url), 10000)

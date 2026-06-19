@@ -21,6 +21,7 @@ class AppUser(Base):
     login_name: Mapped[str] = mapped_column(String(100), unique=True, nullable=False)
     display_name: Mapped[str] = mapped_column(String(150), nullable=False)
     email: Mapped[str | None] = mapped_column(String(200), nullable=True)
+    password_hash: Mapped[str | None] = mapped_column(String(255), nullable=True)
     role_id: Mapped[int] = mapped_column(ForeignKey("competitor_ticket.app_role.role_id"), nullable=False)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
     created_at: Mapped = mapped_column(DateTime(timezone=True), server_default=func.now())

@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useAuth } from '../state/AuthContext'
 import { searchTicketsApi } from '../services/api'
 import DataTable from '../ui/DataTable'
 import StatusBadge from '../ui/StatusBadge'
 
 export default function TicketsPage() {
-  const { demoUser } = useAuth()
   const [rows, setRows] = useState([])
   const [meta, setMeta] = useState(null)
   const [loading, setLoading] = useState(false)
@@ -16,7 +14,7 @@ export default function TicketsPage() {
     setLoading(true)
     try {
       const params = Object.fromEntries(Object.entries({ ...filters, page: 1, pageSize: 50 }).filter(([,v]) => v !== '' && v !== null && v !== undefined))
-      const res = await searchTicketsApi(demoUser, params)
+      const res = await searchTicketsApi(params)
       setRows(res.data?.data || [])
       setMeta(res.data?.meta || null)
     } finally {

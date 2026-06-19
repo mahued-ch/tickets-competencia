@@ -7,6 +7,7 @@ sys.path.append(str(ROOT))
 from app.db.base import Base
 from app.db.session import engine, SessionLocal
 from app.models import AppRole, AppUser, AppUserStore
+from app.security.password import hash_password
 
 
 def main():
@@ -40,9 +41,12 @@ def main():
         for login, display, email, role_code, stores in users:
             user = db.query(AppUser).filter(AppUser.login_name == login).first()
             if not user:
-                user = AppUser(login_name=login, display_name=display, email=email, role_id=role_rows[role_code].role_id, is_active=True)
+                user = AppUser(login_name=login, display_name=display, email=email, role_id=role_rows[role_code].role_id, is_active=True, password_hash=hash_password("demo123"))
                 db.add(user)
                 db.flush()
+            else:
+                if not user.password_hash:
+                    user.password_hash = hash_password("demo123")
             for store in stores:
                 existing = db.query(AppUserStore).filter(AppUserStore.user_id == user.user_id, AppUserStore.store_code == store).first()
                 if not existing:

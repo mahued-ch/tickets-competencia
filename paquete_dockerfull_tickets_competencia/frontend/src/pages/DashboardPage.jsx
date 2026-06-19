@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../state/AuthContext'
-import { getHealth, meApi } from '../services/api'
+import { getHealth } from '../services/api'
 
 export default function DashboardPage() {
-  const { demoUser, currentUser } = useAuth()
+  const { currentUser } = useAuth()
   const [health, setHealth] = useState('...')
 
   useEffect(() => {

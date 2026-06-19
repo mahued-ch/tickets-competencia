@@ -6,15 +6,15 @@ import DataTable from '../ui/DataTable'
 import StatusBadge from '../ui/StatusBadge'
 
 export default function BatchesPage() {
-  const { demoUser, currentUser } = useAuth()
+  const { currentUser } = useAuth()
   const [rows, setRows] = useState([])
   const [error, setError] = useState('')
 
   useEffect(() => {
-    listBatchesApi(demoUser)
+    listBatchesApi()
       .then((res) => setRows(res.data?.data || []))
       .catch((err) => setError(err?.response?.data?.detail || 'Error al cargar lotes'))
-  }, [demoUser])
+  }, [])
 
   if (!['ADMIN', 'SUPERVISOR'].includes(currentUser?.roleCode)) {
     return <div className="page"><p>No tiene permisos para este modulo.</p></div>

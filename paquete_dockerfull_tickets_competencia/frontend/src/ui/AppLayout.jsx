@@ -1,9 +1,12 @@
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { useState } from 'react'
+import { NavLink, Outlet } from 'react-router-dom'
 import { useAuth } from '../state/AuthContext'
+import ChangePasswordModal from './ChangePasswordModal'
 
 export default function AppLayout() {
   const { currentUser, logout } = useAuth()
   const role = currentUser?.roleCode
+  const [showPasswordModal, setShowPasswordModal] = useState(false)
 
   return (
     <div className="app-shell">
@@ -21,12 +24,16 @@ export default function AppLayout() {
           <div>
             <strong>{currentUser?.displayName}</strong> <span className="muted">({currentUser?.roleCode})</span>
           </div>
-          <button className="btn btn-secondary" onClick={logout}>Salir</button>
+          <div className="row gap-8">
+            <button className="btn btn-secondary btn-sm" onClick={() => setShowPasswordModal(true)}>Cambiar contraseña</button>
+            <button className="btn btn-secondary" onClick={logout}>Salir</button>
+          </div>
         </header>
         <section className="content-area">
           <Outlet />
         </section>
       </main>
+      {showPasswordModal && <ChangePasswordModal onClose={() => setShowPasswordModal(false)} />}
     </div>
   )
 }

@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { useAuth } from '../state/AuthContext'
 import { getBatchApi, getBatchErrorsApi, getBatchFilesApi } from '../services/api'
 import DataTable from '../ui/DataTable'
 
 export default function BatchDetailPage() {
   const { batchId } = useParams()
-  const { demoUser } = useAuth()
   const [batch, setBatch] = useState(null)
   const [files, setFiles] = useState([])
   const [errors, setErrors] = useState([])
@@ -14,9 +12,9 @@ export default function BatchDetailPage() {
 
   useEffect(() => {
     Promise.all([
-      getBatchApi(demoUser, batchId),
-      getBatchFilesApi(demoUser, batchId),
-      getBatchErrorsApi(demoUser, batchId),
+      getBatchApi(batchId),
+      getBatchFilesApi(batchId),
+      getBatchErrorsApi(batchId),
     ])
       .then(([b, f, e]) => {
         setBatch(b.data?.data || null)
@@ -24,7 +22,7 @@ export default function BatchDetailPage() {
         setErrors(e.data?.data || [])
       })
       .catch((err) => setMsg(err?.response?.data?.detail || 'Error al cargar lote'))
-  }, [demoUser, batchId])
+  }, [batchId])
 
   if (!batch) return <div className="page"><p>{msg || 'Cargando...'}</p></div>
 

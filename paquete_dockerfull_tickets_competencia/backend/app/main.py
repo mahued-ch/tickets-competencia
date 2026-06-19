@@ -8,6 +8,7 @@ from app.api.routes.tickets import router as tickets_router
 from app.api.routes.scan_file import router as scan_file_router
 from app.api.routes.integration import router as integration_router
 from app.api.routes.admin import router as admin_router
+from app.api.routes.auth_route import router as auth_router
 
 settings = get_settings()
 configure_logging()
@@ -20,3 +21,4 @@ app.include_router(tickets_router)
 app.include_router(scan_file_router)
 app.include_router(integration_router)
 app.include_router(admin_router)
+app.include_router(auth_router)
