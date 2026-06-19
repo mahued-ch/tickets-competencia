@@ -1,0 +1,41 @@
+      *
+      *  ARCHIVO SAPRCTGD
+      *  AGOSTO 2010
+      *  TCKETS PARA DIGITALIZAR CABECERA
+      *
+     A          R PRCDGDR
+     A            DGDTCK        35A         COLHDG('TICKET' 'COMPRA')
+     A                                      TEXT('TICKET DE COMPRA')
+     A            DGDCOD        10A         COLHDG('CODIGO' 'COMPETENCIA')
+     A                                      TEXT('CODIGO DE COMPETENCIA')
+     A            DGDSTR         5  0       COLHDG('NUM TDA' 'COMPETENCIA')
+     A                                      TEXT('NUM TIENDA DE COMPETENCIA')
+     A            DGDDAT         8  0       COLHDG('FECHA DE' 'PRECIO')
+     A                                      TEXT('FECHA DE PRECIO')
+     A            DGDHRS         6  0       COLHDG('HORA DE' 'PRECIO')
+     A                                      TEXT('HORA DE PRECIO')
+     A            DGDSKU        18  0       COLHDG('SKU')
+     A                                      TEXT('SKU')
+     A            DGDDPT         3  0       COLHDG('DEPTO')
+     A                                      TEXT('DEPARTAMENTO')
+     A            DGDSDP         3  0       COLHDG('SUB' 'DEPTO')
+     A                                      TEXT('SUB-DEPARTAMENTO')
+     A            DGDCLS         3  0       COLHDG('CLASE')
+     A                                      TEXT('CLASE')
+     A            DGDSCL         3  0       COLHDG('SUB' 'CLASE')
+     A                                      TEXT('SUB-CLASE')
+     A            DGDPRC         9  2       COLHDG('PRECIO' 'COMPETENCIA')
+     A                                      TEXT('PRECIO DE COMPETENCIA')
+     A            DGDPRV        10  0       COLHDG('PROV' ' PROVEED')
+     A                                      TEXT('PROVEEDOR           ')
+     A            DGDUPC        18  0       COLHDG('UPC   ' ' UPC    ')
+     A                                      TEXT('UPC                 ')
+     A            DGDSTS         1A         COLHDG('STATUS' ' DEL REG')
+     A                                      TEXT('ESTATUS DEL REGISTRO')
+      *
+     A          K DGDTCK
+     A          K DGDCOD
+     A          K DGDSTR
+     A          K DGDDAT
+     A          K DGDHRS
+     A          K DGDSKU 

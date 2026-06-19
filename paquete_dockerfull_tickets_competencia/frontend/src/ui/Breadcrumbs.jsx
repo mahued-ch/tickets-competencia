@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 const LABEL_MAP = {
   dashboard: 'Dashboard',
   tickets: 'Tickets',
+  coverage: 'Cobertura',
+  audit: 'Auditoria',
   'integration/batches': 'Lotes',
   'admin/users': 'Usuarios',
 }

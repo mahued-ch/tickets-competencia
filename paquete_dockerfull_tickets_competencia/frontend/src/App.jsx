@@ -8,6 +8,8 @@ import TicketDetailPage from './pages/TicketDetailPage'
 import BatchesPage from './pages/BatchesPage'
 import BatchDetailPage from './pages/BatchDetailPage'
 import UsersPage from './pages/UsersPage'
+import SupervisorDashboardPage from './pages/SupervisorDashboardPage'
+import AuditPage from './pages/AuditPage'
 
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth()
@@ -31,9 +33,11 @@ export default function App() {
         <Route path="dashboard" element={<DashboardPage />} />
         <Route path="tickets" element={<TicketsPage />} />
         <Route path="tickets/:ticketId" element={<TicketDetailPage />} />
+        <Route path="coverage" element={<SupervisorDashboardPage />} />
         <Route path="integration/batches" element={<BatchesPage />} />
         <Route path="integration/batches/:batchId" element={<BatchDetailPage />} />
         <Route path="admin/users" element={<UsersPage />} />
+        <Route path="audit" element={<AuditPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/dashboard" replace />} />
     </Routes>

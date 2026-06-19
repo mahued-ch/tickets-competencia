@@ -88,6 +88,14 @@ export function getBatchErrorsApi(batchId) {
   return api.get(`/integration/batches/${batchId}/errors`, authHeaders())
 }
 
+export function getCoverageApi() {
+  return api.get('/tickets/coverage', authHeaders())
+}
+
+export function searchAuditEventsApi(params) {
+  return api.get('/audit/events', { ...authHeaders(), params })
+}
+
 export function listUsersApi() {
   return api.get('/admin/users', authHeaders())
 }
@@ -114,4 +122,12 @@ export function adminSetPasswordApi(userId, newPassword) {
 
 export function createUserApi(payload) {
   return api.post('/admin/users', payload, authHeaders())
+}
+
+export function updateUserApi(userId, payload) {
+  return api.put(`/admin/users/${userId}`, payload, authHeaders())
+}
+
+export function deleteUserApi(userId) {
+  return api.delete(`/admin/users/${userId}`, authHeaders())
 }

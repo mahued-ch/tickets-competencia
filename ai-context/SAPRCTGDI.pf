@@ -1,0 +1,27 @@
+      *
+      *  ARCHIVO PRCTDGDI
+      *  AGOSTO 2010
+      *  DISTRIBUCION DE TICKETS  A SUCURSALES
+      *
+     A          R PRCDGIR
+     A            DGITCK        35A         COLHDG('TICKET' 'COMPRA')
+     A                                      TEXT('TICKET DE COMPRA')
+     A            DGICOD        10A         COLHDG('CODIGO' 'COMPETENCIA')
+     A                                      TEXT('CODIGO DE COMPETENCIA')
+     A            DGISTR         5  0       COLHDG('NUM TDA' 'COMPETENCIA')
+     A                                      TEXT('NUM TIENDA DE COMPETENCIA')
+     A            DGIDAT         8  0       COLHDG('FECHA DE' 'PRECIO')
+     A                                      TEXT('FECHA DE PRECIO')
+     A            DGIHRS         6  0       COLHDG('HORA DE' 'PRECIO')
+     A                                      TEXT('HORA DE PRECIO')
+     A            DGITDA         5  0       COLHDG('SUCURSAL' 'SUCDIS')
+     A                                      TEXT('SUC. DISTRIB.')
+     A            DGISTS         1A         COLHDG('STATUS' ' DEL REG')
+     A                                      TEXT('ESTATUS DEL REGISTRO')
+      *
+     A          K DGITCK
+     A          K DGICOD
+     A          K DGISTR
+     A          K DGIDAT
+     A          K DGIHRS
+     A          K DGITDA 

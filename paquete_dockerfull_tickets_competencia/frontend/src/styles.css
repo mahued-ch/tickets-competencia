@@ -71,6 +71,9 @@ textarea, input, select, button { font: inherit; }
 .table { width: 100%; border-collapse: collapse; }
 .table th, .table td { border-bottom: 1px solid #e5e7eb; padding: 10px; text-align: left; vertical-align: top; }
 .table th { background: #f9fafb; }
+.table th.sortable { cursor: pointer; user-select: none; }
+.table th.sortable:hover { background: #e5e7eb; }
+.sort-arrow { font-size: 11px; }
 .empty-cell { color: #6b7280; text-align: center; }
 
 .filter-bar, .row { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -100,6 +103,7 @@ textarea, input, select, button { font: inherit; }
 .btn:disabled { opacity: .6; cursor: not-allowed; }
 .btn-secondary { background: #475569; }
 .btn-success { background: #16a34a; }
+.btn-danger { background: #dc2626; }
 .btn-sm { padding: 6px 10px; font-size: 14px; }
 
 .badge {

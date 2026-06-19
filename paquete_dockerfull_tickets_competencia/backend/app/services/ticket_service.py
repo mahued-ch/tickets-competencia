@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session, joinedload
-from app.models.ticket import Ticket
+from sqlalchemy import func as sqlfunc
+from app.models.ticket import Ticket, TicketStore
 from app.schemas.ticket import TicketItemDTO, TicketStoreDTO, TicketSummaryDTO, ScanFileDTO
 from app.services.security_service import can_view_ticket
 from app.schemas.security import SecurityContext
@@ -102,6 +103,34 @@ def get_ticket_stores(db: Session, ctx: SecurityContext, ticket_id: int):
     if not can_view_ticket(ctx, ticket):
         raise PermissionError("Forbidden")
     return [TicketStoreDTO(ticketStoreId=s.ticket_store_id, ticketId=s.ticket_id, storeCode=s.store_code) for s in ticket.stores]
+
+
+def get_coverage_stats(db: Session, ctx: SecurityContext) -> dict:
+    if ctx.role_code not in {"ADMIN", "SUPERVISOR"}:
+        raise PermissionError("Only ADMIN/SUPERVISOR can view coverage")
+
+    total = db.query(sqlfunc.count(Ticket.ticket_id)).scalar() or 0
+    with_file = db.query(sqlfunc.count(Ticket.ticket_id)).filter(Ticket.has_scan_file == True).scalar() or 0
+    confirmed = db.query(sqlfunc.count(Ticket.ticket_id)).filter(Ticket.scan_status == "FILE_CONFIRMED").scalar() or 0
+
+    status_rows = db.query(Ticket.source_status_code, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.source_status_code).all()
+    by_status = {r.source_status_code or "NULL": r.cnt for r in status_rows}
+
+    scan_rows = db.query(Ticket.scan_status, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.scan_status).all()
+    by_scan = {r.scan_status: r.cnt for r in scan_rows}
+
+    store_rows = db.query(TicketStore.store_code, sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).label("cnt")).group_by(TicketStore.store_code).order_by(sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).desc()).all()
+    by_store = [{"storeCode": r.store_code, "ticketCount": r.cnt} for r in store_rows]
+
+    return {
+        "totalTickets": total,
+        "withFile": with_file,
+        "withoutFile": total - with_file,
+        "confirmed": confirmed,
+        "byStatus": by_status,
+        "byScanStatus": by_scan,
+        "byStore": by_store,
+    }
 
 
 def get_active_scan_file(db: Session, ctx: SecurityContext, ticket_id: int):

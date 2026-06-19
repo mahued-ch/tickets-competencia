@@ -1,0 +1,32 @@
+      *
+      *  ARCHIVO SAPRCTGH
+      *  AGOSTO 2010
+      *  TCKETS PARA DIGITALIZAR CABECERA TEMPORAL
+      *
+     A          R PRCDGHR
+     A            DGHTCK        35A         COLHDG('TICKET' 'COMPRA')
+     A                                      TEXT('TICKET DE COMPRA')
+     A            DGHCOD        10A         COLHDG('CODIGO' 'COMPETENCIA')
+     A                                      TEXT('CODIGO DE COMPETENCIA')
+     A            DGHSTR         5  0       COLHDG('NUM TDA' 'COMPETENCIA')
+     A                                      TEXT('NUM TIENDA DE COMPETENCIA')
+     A            DGHDAT         8  0       COLHDG('FECHA DE' 'PRECIO')
+     A                                      TEXT('FECHA DE PRECIO')
+     A            DGHHRS         6  0       COLHDG('HORA DE' 'PRECIO')
+     A                                      TEXT('HORA DE PRECIO')
+     A            DGHZON         3  0       COLHDG('ZONA' 'PRECIO')
+     A                                      TEXT('ZONA DE PRECIO')
+     A            DGHTDA         5  0       COLHDG('SUCURSAL' 'PRECIO')
+     A                                      TEXT('SUCURSAL PRECIO')
+     A            DGHSUC         5  0       COLHDG('SUC' 'CAPTURA')
+     A                                      TEXT('SUCURSAL QUE CAPTURA')
+     A            DGHUSR        10A         COLHDG('USUARIO' 'CAPTURO')
+     A                                      TEXT('USUARIO QUE CAPTURO')
+     A            DGHSTS         1A         COLHDG('STATUS' ' DEL REG')
+     A                                      TEXT('ESTATUS DEL REGISTRO')
+      *
+     A          K DGHTCK
+     A          K DGHCOD
+     A          K DGHSTR
+     A          K DGHDAT
+     A          K DGHHRS 

@@ -17,7 +17,7 @@ def list_users(db: Session = Depends(get_db), ctx: SecurityContext = Depends(get
         require_admin(ctx)
     except PermissionError:
         raise HTTPException(status_code=403, detail="FORBIDDEN")
-    rows = db.query(AppUser).all()
+    rows = db.query(AppUser).order_by(AppUser.login_name).all()
     data = [{"userId": u.user_id, "loginName": u.login_name, "displayName": u.display_name, "email": u.email, "roleCode": u.role.role_code, "isActive": u.is_active} for u in rows]
     return ApiResponse.ok(data, {"count": len(data)})
 
@@ -35,6 +35,14 @@ def list_user_stores(user_id: int, db: Session = Depends(get_db), ctx: SecurityC
 
 class AdminSetPasswordRequest(BaseModel):
     new_password: str
+
+
+class UpdateUserRequest(BaseModel):
+    login_name: str | None = None
+    display_name: str | None = None
+    email: str | None = None
+    role_code: str | None = None
+    is_active: bool | None = None
 
 
 class CreateUserRequest(BaseModel):
@@ -83,6 +91,69 @@ def create_user(
         "roleCode": user.role.role_code,
         "isActive": user.is_active,
     })
+
+
+@router.put("/users/{user_id}")
+def update_user(
+    user_id: int,
+    body: UpdateUserRequest,
+    db: Session = Depends(get_db),
+    ctx: SecurityContext = Depends(get_current_context),
+):
+    try:
+        require_admin(ctx)
+    except PermissionError:
+        raise HTTPException(status_code=403, detail="FORBIDDEN")
+    user = db.query(AppUser).filter(AppUser.user_id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="USER_NOT_FOUND")
+    if body.login_name is not None:
+        existing = db.query(AppUser).filter(AppUser.login_name == body.login_name, AppUser.user_id != user_id).first()
+        if existing:
+            raise HTTPException(status_code=409, detail="LOGIN_NAME_ALREADY_EXISTS")
+        user.login_name = body.login_name
+    if body.display_name is not None:
+        user.display_name = body.display_name
+    if body.email is not None:
+        user.email = body.email
+    if body.role_code is not None:
+        role = db.query(AppRole).filter(AppRole.role_code == body.role_code).first()
+        if not role:
+            raise HTTPException(status_code=400, detail="INVALID_ROLE_CODE")
+        user.role_id = role.role_id
+    if body.is_active is not None:
+        user.is_active = body.is_active
+    db.commit()
+    db.refresh(user)
+    return ApiResponse.ok({
+        "userId": user.user_id,
+        "loginName": user.login_name,
+        "displayName": user.display_name,
+        "email": user.email,
+        "roleCode": user.role.role_code,
+        "isActive": user.is_active,
+    })
+
+
+@router.delete("/users/{user_id}")
+def delete_user(
+    user_id: int,
+    db: Session = Depends(get_db),
+    ctx: SecurityContext = Depends(get_current_context),
+):
+    try:
+        require_admin(ctx)
+    except PermissionError:
+        raise HTTPException(status_code=403, detail="FORBIDDEN")
+    user = db.query(AppUser).filter(AppUser.user_id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="USER_NOT_FOUND")
+    if user.login_name == "admin":
+        raise HTTPException(status_code=400, detail="CANNOT_DELETE_ADMIN_USER")
+    db.query(AppUserStore).filter(AppUserStore.user_id == user_id).delete()
+    user.is_active = False
+    db.commit()
+    return ApiResponse.ok({"message": "User deactivated"})
 
 
 @router.put("/users/{user_id}/password")
