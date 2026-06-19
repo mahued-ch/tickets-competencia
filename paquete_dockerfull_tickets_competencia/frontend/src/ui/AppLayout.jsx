@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useAuth } from '../state/AuthContext'
+import Breadcrumbs from './Breadcrumbs'
 import ChangePasswordModal from './ChangePasswordModal'
 
 export default function AppLayout() {
@@ -30,6 +31,7 @@ export default function AppLayout() {
           </div>
         </header>
         <section className="content-area">
+          <Breadcrumbs />
           <Outlet />
         </section>
       </main>

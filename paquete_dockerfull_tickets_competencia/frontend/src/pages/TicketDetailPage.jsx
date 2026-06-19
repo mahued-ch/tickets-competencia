@@ -4,6 +4,7 @@ import { useAuth } from '../state/AuthContext'
 import { confirmScanFileApi, fetchScanFileBlob, getActiveScanFileApi, getTicketApi, getTicketItemsApi, getTicketStoresApi, uploadScanFileApi } from '../services/api'
 import DataTable from '../ui/DataTable'
 import StatusBadge from '../ui/StatusBadge'
+import FileViewerModal from '../ui/FileViewerModal'
 
 export default function TicketDetailPage() {
   const { ticketId } = useParams()
@@ -17,6 +18,7 @@ export default function TicketDetailPage() {
   const [uploading, setUploading] = useState(false)
   const [notes, setNotes] = useState('')
   const [selectedFile, setSelectedFile] = useState(null)
+  const [viewerBlob, setViewerBlob] = useState(null)
 
   const load = async () => {
     setLoading(true)
@@ -77,9 +79,7 @@ export default function TicketDetailPage() {
     setMessage('')
     try {
       const blob = await fetchScanFileBlob(ticketId)
-      const url = URL.createObjectURL(blob)
-      window.open(url, '_blank', 'noopener,noreferrer')
-      setTimeout(() => URL.revokeObjectURL(url), 10000)
+      setViewerBlob(blob)
     } catch (err) {
       setMessage('No fue posible visualizar el archivo')
     }
@@ -166,6 +166,14 @@ export default function TicketDetailPage() {
 
         {message && <p className="mt-16 info-box">{message}</p>}
       </div>
+      {viewerBlob && (
+        <FileViewerModal
+          blob={viewerBlob}
+          fileName={scanFile?.fileName}
+          mimeType={scanFile?.mimeType}
+          onClose={() => setViewerBlob(null)}
+        />
+      )}
     </div>
   )
 }

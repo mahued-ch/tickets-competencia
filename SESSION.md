@@ -1,9 +1,10 @@
 # Estado de la sesion - Tickets Competencia
 
 ## Fecha
-2026-06-18
+2026-06-19
 
 ## Que se hizo
+### Sesion anterior (2026-06-18)
 - [x] Extraido paquete dockerfull
 - [x] Instalado PostgreSQL 17, creada DB `tickets_db` con usuario `tickets_user`
 - [x] Creado entorno virtual Python e instaladas dependencias
@@ -22,6 +23,14 @@
 - [x] Creado `DELETE /api/v1/admin/users/{id}/stores/{store}` para eliminar tienda asignada
 - [x] Actualizado frontend: LoginPage con formulario usuario/contraseña, modal cambio password, CRUD usuarios en UsersPage
 - [x] Backward compatibility mantenida con header `X-Demo-User`
+
+### Sesion actual (2026-06-19)
+- [x] STORE_USER ya no ve tickets confirmados (backend `security_service.py`)
+- [x] Breadcrumbs en todas las paginas (`ui/Breadcrumbs.jsx`)
+- [x] Visor de archivo escaneado inline (`ui/FileViewerModal.jsx`)
+  - Modal con toolbar (zoom +/−/⊙, imprimir, descargar, cerrar)
+  - PDF en iframe, imagenes con zoom y drag con el raton
+  - Scroll wheel para zoom, click y arrastrar para mover
 
 ## URL activas
 - Frontend: http://localhost:5173/login
