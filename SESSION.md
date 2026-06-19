@@ -1,44 +1,104 @@
-# Estado de la sesion - Tickets Competencia
+# Resumen de Sesión — Tickets Competencia
 
-## Fecha
-2026-06-19
+## Objetivo
+Sistema Web de Gestión de Tickets de Competencia (reemplazo de InvesDoc).
 
-## Que se hizo
-### Sesion anterior (2026-06-18)
-- [x] Extraido paquete dockerfull
-- [x] Instalado PostgreSQL 17, creada DB `tickets_db` con usuario `tickets_user`
-- [x] Creado entorno virtual Python e instaladas dependencias
-- [x] Instaladas dependencias Node del frontend
-- [x] Ejecutado bootstrap de BD: 11 tablas + usuarios demo
-- [x] Agregado CORS middleware al backend
-- [x] Creados datos JSON de prueba para el importador
-- [x] Ejecutado importador: 8 tickets insertados
-- [x] Inicializado git y subido a GitHub (mahued-ch/tickets-competencia)
-- [x] Creados start.bat / stop.bat
-- [x] Agregada columna `password_hash` a `app_user`
-- [x] Creada autenticacion por password (`POST /api/v1/auth/login`) con tokens Bearer
-- [x] Creado `PUT /api/v1/auth/password` para cambio de password propio
-- [x] Creado `PUT /api/v1/admin/users/{id}/password` para admin resetea password de cualquier usuario
-- [x] Creado `POST /api/v1/admin/users` para admin crea nuevos usuarios
-- [x] Creado `DELETE /api/v1/admin/users/{id}/stores/{store}` para eliminar tienda asignada
-- [x] Actualizado frontend: LoginPage con formulario usuario/contraseña, modal cambio password, CRUD usuarios en UsersPage
-- [x] Backward compatibility mantenida con header `X-Demo-User`
+## Estado Actual (19/jun/2026)
 
-### Sesion actual (2026-06-19)
-- [x] STORE_USER ya no ve tickets confirmados (backend `security_service.py`)
-- [x] Breadcrumbs en todas las paginas (`ui/Breadcrumbs.jsx`)
-- [x] Visor de archivo escaneado inline (`ui/FileViewerModal.jsx`)
-  - Modal con toolbar (zoom +/−/⊙, imprimir, descargar, cerrar)
-  - PDF en iframe, imagenes con zoom y drag con el raton
-  - Scroll wheel para zoom, click y arrastrar para mover
+### Backend — Python/FastAPI + PostgreSQL/SQLAlchemy 2.0
 
-## URL activas
-- Frontend: http://localhost:5173/login
-- Backend API: http://localhost:8000/docs
-- Health: http://localhost:8000/api/v1/health
+#### Endpoints (todos bajo `/api/v1`)
 
-## Usuarios demo
-admin, supervisor, store_a, store_b (password: `demo123`)
+| Ruta | Método | Rol | Estado |
+|------|--------|-----|--------|
+| `/health` | GET | público | ✅ |
+| `/auth/login` | POST | público | ✅ |
+| `/auth/logout` | POST | autenticado | ✅ |
+| `/auth/password` | PUT | autenticado | ✅ |
+| `/me` | GET | autenticado | ✅ |
+| `/tickets` | GET | según permiso | ✅ |
+| `/tickets/{id}` | GET | según permiso | ✅ |
+| `/tickets/{id}/items` | GET | según permiso | ✅ |
+| `/tickets/{id}/stores` | GET | según permiso | ✅ |
+| `/tickets/{id}/scan-file` | GET/POST | según permiso | ✅ |
+| `/tickets/{id}/scan-file/confirm` | PUT | según permiso | ✅ |
+| `/tickets/{id}/scan-file/content` | GET | según permiso | ✅ |
+| `/tickets/coverage` | GET | ADMIN/SUPERVISOR | ✅ |
+| `/audit/events` | GET | ADMIN/SUPERVISOR | ✅ |
+| `/admin/users` | GET/POST | ADMIN | ✅ |
+| `/admin/users/{id}` | PUT/DELETE | ADMIN | ✅ |
+| `/admin/users/{id}/password` | PUT | ADMIN | ✅ |
+| `/admin/users/{id}/stores` | GET/POST | ADMIN | ✅ |
+| `/admin/users/{id}/stores/{code}` | DELETE | ADMIN | ✅ |
+| `/integration/batches` | GET | ADMIN | ✅ |
+| `/integration/batches/{id}` | GET | ADMIN | ✅ |
+| `/integration/batches/{id}/files` | GET | ADMIN | ✅ |
+| `/integration/batches/{id}/errors` | GET | ADMIN | ✅ |
 
-## Pendiente / Proximo paso
-- Continuar implementacion segun documentacion en ai-context/
+#### Modelos
+- **user**: `AppRole`, `AppUser`, `AppUserStore`
+- **ticket**: `Ticket`, `TicketItem`, `TicketStore`, `TicketScanFile`, `AuditEvent`
+- **integration**: `IntegrationBatch`, `IntegrationFile`, `IntegrationError`
+- **inbound**: `InboundTicketHeader`, `InboundTicketItem`, `InboundTicketStore`
+
+#### Servicios
+- `ticket_service`: search, detail, coverage stats
+- `security_service`: role/permission checks
+- `scan_file_service`: upload/replace/confirm via PostgreSQL functions
+- `importer_service`: staging-first insert + archivo hash + error handling
+- `audit_service`: búsqueda de eventos de auditoría
+
+#### Migraciones
+- `scripts/migrate_v2_staging.py`: tablas inbound + columnas payload
+- `scripts/migrate_v3_scan_file_functions.py`: funciones `fn_replace_ticket_scan_file()` y `fn_confirm_ticket_scan_file()`
+
+### Frontend — React/Vite
+
+#### Páginas
+| Ruta | Componente | Estado |
+|------|-----------|--------|
+| `/login` | LoginPage | ✅ |
+| `/dashboard` | DashboardPage | ✅ |
+| `/admin/users` | UsersPage | ✅ — CRUD completo, orden por columnas |
+| `/coverage` | SupervisorDashboardPage | ✅ |
+| `/audit` | AuditPage | ✅ |
+| `/integration` | IntegrationPage | ✅ |
+| `/tickets` | TicketsPage | ✅ |
+| `/tickets/:id` | TicketDetailPage | ✅ |
+
+#### Componentes UI
+- `DataTable` — tabla genérica con ordenamiento por columnas (▲/▼), sortable via prop
+- `StatusBadge` — badges de estado con colores
+- `Breadcrumbs` — migas de pan
+- `AppLayout` — layout con sidebar + topbar
+
+#### Funcionalidades recientes
+- **Editar usuario**: modal con campos login, nombre, email, rol, activo/inactivo
+- **Eliminar usuario**: soft-delete (is_active=false), protege usuario admin
+- **Ordenamiento**: columnas Login, Nombre, Rol y Tienda ordenables clicando el header
+
+### Pruebas
+
+#### Backend (27 tests, pytest + httpx + SQLite in-memory)
+| Archivo | Tests | Estado |
+|---------|-------|--------|
+| `test_security_service.py` | 9 | ✅ |
+| `test_ticket_service.py` | 8 | ✅ |
+| `test_api_endpoints.py` | 10 | ✅ |
+
+- SQLite in-memory con `StaticPool` + `check_same_thread=False`
+- Schemas de PostgreSQL eliminados vía evento `before_create`
+- Fechas como objetos `datetime.date`
+
+#### Frontend (10 tests, vitest + testing-library)
+| Archivo | Tests | Estado |
+|---------|-------|--------|
+| `DataTable.test.jsx` | 4 | ✅ |
+| `StatusBadge.test.jsx` | 4 | ✅ |
+| `AuthContext.test.jsx` | 2 | ✅ |
+
+### Pendiente / Mejoras futuras
+- Endpoints faltantes: integración contínua, despliegue
+- Pruebas de `scan_file_service` con mocks
+- Pruebas de `importer_service` con fixtures de archivos temporales
+- End-to-end con PostgreSQL test container
