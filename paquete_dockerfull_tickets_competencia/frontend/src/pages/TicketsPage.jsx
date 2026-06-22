@@ -8,7 +8,11 @@ export default function TicketsPage() {
   const [rows, setRows] = useState([])
   const [meta, setMeta] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [filters, setFilters] = useState({ sourceStatusCode: '', scanStatus: '', sourceTicketKey: '' })
+  const [filters, setFilters] = useState({
+    sourceBusinessCode: '', sourceStoreCode: '',
+    sourceTicketKey: '', sourceStatusCode: '', scanStatus: '',
+    sourceTicketDateFrom: '', sourceTicketDateTo: '',
+  })
 
   const load = async () => {
     setLoading(true)
@@ -24,8 +28,12 @@ export default function TicketsPage() {
 
   useEffect(() => { load() }, [])
 
+  const setF = (k) => (e) => setFilters((s) => ({ ...s, [k]: e.target.value }))
+
   const columns = [
     { key: 'ticketId', title: 'ID' },
+    { key: 'sourceBusinessCode', title: 'Cadena' },
+    { key: 'sourceStoreCode', title: 'Tienda' },
     { key: 'sourceTicketKey', title: 'Llave Origen' },
     { key: 'sourceStatusCode', title: 'Status Origen' },
     { key: 'scanStatus', title: 'Status Archivo', render: (r) => <StatusBadge value={r.scanStatus} /> },
@@ -37,14 +45,18 @@ export default function TicketsPage() {
     <div className="page">
       <h1>Tickets</h1>
       <div className="filter-bar">
-        <input placeholder="sourceTicketKey" value={filters.sourceTicketKey} onChange={(e) => setFilters((s) => ({ ...s, sourceTicketKey: e.target.value }))} />
-        <input placeholder="status origen" value={filters.sourceStatusCode} onChange={(e) => setFilters((s) => ({ ...s, sourceStatusCode: e.target.value }))} />
-        <select value={filters.scanStatus} onChange={(e) => setFilters((s) => ({ ...s, scanStatus: e.target.value }))}>
+        <input placeholder="Cadena" value={filters.sourceBusinessCode} onChange={setF('sourceBusinessCode')} />
+        <input placeholder="Tienda" value={filters.sourceStoreCode} onChange={setF('sourceStoreCode')} />
+        <input placeholder="Llave origen" value={filters.sourceTicketKey} onChange={setF('sourceTicketKey')} />
+        <input placeholder="Status origen" value={filters.sourceStatusCode} onChange={setF('sourceStatusCode')} />
+        <select value={filters.scanStatus} onChange={setF('scanStatus')}>
           <option value="">scanStatus...</option>
           <option value="NO_FILE">NO_FILE</option>
           <option value="FILE_UPLOADED">FILE_UPLOADED</option>
           <option value="FILE_CONFIRMED">FILE_CONFIRMED</option>
         </select>
+        <input type="date" value={filters.sourceTicketDateFrom} onChange={setF('sourceTicketDateFrom')} />
+        <input type="date" value={filters.sourceTicketDateTo} onChange={setF('sourceTicketDateTo')} />
         <button className="btn" onClick={load}>Buscar</button>
       </div>
       {loading ? <p>Cargando...</p> : <DataTable columns={columns} rows={rows} emptyMessage="No se encontraron tickets" />}

@@ -26,6 +26,10 @@ def search_tickets(db: Session, ctx: SecurityContext, filters: dict) -> tuple[li
     query = db.query(Ticket).options(joinedload(Ticket.stores))
     if value := filters.get("sourceTicketKey"):
         query = query.filter(Ticket.source_ticket_key == value)
+    if value := filters.get("sourceBusinessCode"):
+        query = query.filter(Ticket.source_business_code == value)
+    if value := filters.get("sourceStoreCode"):
+        query = query.filter(Ticket.source_store_code == value)
     if value := filters.get("sourceStatusCode"):
         query = query.filter(Ticket.source_status_code == value)
     if value := filters.get("scanStatus"):
@@ -34,6 +38,8 @@ def search_tickets(db: Session, ctx: SecurityContext, filters: dict) -> tuple[li
         query = query.filter(Ticket.source_ticket_date >= value)
     if value := filters.get("sourceTicketDateTo"):
         query = query.filter(Ticket.source_ticket_date <= value)
+    if value := filters.get("batchId"):
+        query = query.filter(Ticket.batch_id == int(value))
 
     rows = query.order_by(Ticket.source_ticket_date.desc()).all()
     visible = [r for r in rows if can_view_ticket(ctx, r)]

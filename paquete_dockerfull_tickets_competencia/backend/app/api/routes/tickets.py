@@ -11,22 +11,28 @@ router = APIRouter(prefix="/api/v1/tickets", tags=["tickets"])
 
 @router.get("")
 def search_tickets(
+    sourceBusinessCode: str | None = None,
+    sourceStoreCode: str | None = None,
     sourceTicketKey: str | None = None,
     sourceStatusCode: str | None = None,
     scanStatus: str | None = None,
     sourceTicketDateFrom: str | None = None,
     sourceTicketDateTo: str | None = None,
+    batchId: int | None = None,
     page: int = Query(1, ge=1),
     pageSize: int = Query(20, ge=1, le=200),
     db: Session = Depends(get_db),
     ctx: SecurityContext = Depends(get_current_context),
 ):
     items, meta = ticket_service.search_tickets(db, ctx, {
+        'sourceBusinessCode': sourceBusinessCode,
+        'sourceStoreCode': sourceStoreCode,
         'sourceTicketKey': sourceTicketKey,
         'sourceStatusCode': sourceStatusCode,
         'scanStatus': scanStatus,
         'sourceTicketDateFrom': sourceTicketDateFrom,
         'sourceTicketDateTo': sourceTicketDateTo,
+        'batchId': batchId,
         'page': page,
         'pageSize': pageSize,
     })
