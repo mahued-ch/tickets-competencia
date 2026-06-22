@@ -1,7 +1,7 @@
 import pytest
 from datetime import date
 from fastapi.testclient import TestClient
-from sqlalchemy import create_engine, event
+from sqlalchemy import BigInteger, Integer, create_engine, event
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import StaticPool
 from app.db.base import Base
@@ -28,6 +28,9 @@ def _prepare_sqlite(target, connection, **kw):
             for column in table.columns:
                 for fk in list(column.foreign_keys):
                     fk._colspec = fk._colspec.replace("competitor_ticket.", "")
+                # SQLite autoincrement only works with INTEGER type, not BIGINT
+                if isinstance(column.type, BigInteger) and column.autoincrement and column.primary_key:
+                    column.type = Integer()
 
 
 @pytest.fixture(autouse=True)

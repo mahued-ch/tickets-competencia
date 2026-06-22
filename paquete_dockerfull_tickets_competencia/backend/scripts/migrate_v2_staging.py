@@ -9,6 +9,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
+from sqlalchemy import text
 from app.db.session import engine
 
 
@@ -119,7 +120,7 @@ CREATE INDEX IF NOT EXISTS idx_inbound_ticket_store_is_processed ON competitor_t
 def main():
     print("Running migration v2 (staging tables + payload columns)...")
     with engine.begin() as conn:
-        conn.exec_driver_sql(SQL)
+        conn.execute(text(SQL))
     print("Migration v2 completed successfully.")
 
 if __name__ == '__main__':

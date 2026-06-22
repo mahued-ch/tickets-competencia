@@ -5,6 +5,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
 from app.db.base import Base
+from sqlalchemy import text
 from app.db.session import engine, SessionLocal
 from app.models import AppRole, AppUser, AppUserStore
 from app.security.password import hash_password
@@ -13,7 +14,7 @@ from app.security.password import hash_password
 def main():
     engine.execute if False else None
     with engine.begin() as conn:
-        conn.exec_driver_sql('CREATE SCHEMA IF NOT EXISTS competitor_ticket')
+        conn.execute(text('CREATE SCHEMA IF NOT EXISTS competitor_ticket'))
     Base.metadata.create_all(bind=engine)
 
     db = SessionLocal()

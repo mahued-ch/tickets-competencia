@@ -3,7 +3,7 @@
 ## Objetivo
 Sistema Web de Gestión de Tickets de Competencia (reemplazo de InvesDoc).
 
-## Estado Actual (19/jun/2026)
+## Estado Actual (22/jun/2026)
 
 ### Backend — Python/FastAPI + PostgreSQL/SQLAlchemy 2.0
 
@@ -79,16 +79,30 @@ Sistema Web de Gestión de Tickets de Competencia (reemplazo de InvesDoc).
 
 ### Pruebas
 
-#### Backend (27 tests, pytest + httpx + SQLite in-memory)
+#### Backend — Unitarias (51 tests, pytest + SQLite in-memory)
 | Archivo | Tests | Estado |
 |---------|-------|--------|
 | `test_security_service.py` | 9 | ✅ |
 | `test_ticket_service.py` | 8 | ✅ |
 | `test_api_endpoints.py` | 10 | ✅ |
+| `test_scan_file_service.py` | 16 | ✅ — mocks selectivos solo para TextClause |
+| `test_importer_service.py` | 8 | ✅ — directorios temporales con tmp_path |
 
 - SQLite in-memory con `StaticPool` + `check_same_thread=False`
 - Schemas de PostgreSQL eliminados vía evento `before_create`
-- Fechas como objetos `datetime.date`
+- `BigInteger` PKs convertidos a `Integer` automáticamente en `conftest.py`
+- Mocks con `patch.object(db_session, 'execute', side_effect=...)` que solo interceptan `TextClause`
+
+#### Backend — E2E contra PostgreSQL real (14 tests)
+| Archivo | Tests | Estado |
+|---------|-------|--------|
+| `test_scan_file_e2e.py` | 7 | ✅ — upload, confirm, replace, auditoría |
+| `test_importer_e2e.py` | 7 | ✅ — batch completo, duplicados, errores |
+
+- Conexión directa a `localhost:5432/tickets_db`
+- `Base.metadata.create_all()` + funciones PG en fixture session-scoped
+- Seeds con `SELECT ... WHERE` antes de INSERT para evitar duplicados
+- Cada test usa supropio ticket/archivo (UUID) para evitar interferencias
 
 #### Frontend (10 tests, vitest + testing-library)
 | Archivo | Tests | Estado |
@@ -97,8 +111,16 @@ Sistema Web de Gestión de Tickets de Competencia (reemplazo de InvesDoc).
 | `StatusBadge.test.jsx` | 4 | ✅ |
 | `AuthContext.test.jsx` | 2 | ✅ |
 
+#### Total: 75 tests (61 backend + 10 frontend + 4 herramientas)
+
+### Bugs corregidos
+- **security_service.py**: se restauró filtro `FILE_CONFIRMED` para `STORE_USER` (no veían tickets confirmados)
+- **migrate_v3**: columnas ambiguas `ticket_scan_file_id` y `confirmed_at` en `fn_confirm_ticket_scan_file` — chocaban con output parameters del `RETURNS TABLE`. Se antepuso `competitor_ticket.ticket_scan_file.` para desambiguar.
+- **audit_event**: faltaba columna `ip_address` (no creada en migraciones iniciales). Se agregó `ALTER TABLE ... ADD COLUMN IF NOT EXISTS` en setup E2E.
+
 ### Pendiente / Mejoras futuras
-- Endpoints faltantes: integración contínua, despliegue
-- Pruebas de `scan_file_service` con mocks
-- Pruebas de `importer_service` con fixtures de archivos temporales
-- End-to-end con PostgreSQL test container
+- CI/CD pipeline (GitHub Actions)
+- Ejecutar migración v3 corregida contra la BD de producción (script corregido pero no ejecutado)
+- Tests del importador E2E con más escenarios de error
+- End-to-end general con cypress/playwright
+- Dockerizar E2E tests con base de datos aislada

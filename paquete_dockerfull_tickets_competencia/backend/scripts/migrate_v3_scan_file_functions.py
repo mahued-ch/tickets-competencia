@@ -9,6 +9,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
+from sqlalchemy import text
 from app.db.session import engine
 
 SQL_REPLACE = """
@@ -182,8 +183,8 @@ BEGIN
     UPDATE competitor_ticket.ticket_scan_file
        SET is_confirmed = true, confirmed_at = NOW(), confirmed_by_user_id = p_confirmed_by_user_id,
            notes = CASE WHEN p_notes IS NULL OR BTRIM(p_notes) = '' THEN notes WHEN notes IS NULL OR BTRIM(notes) = '' THEN p_notes ELSE notes || E'\\n' || p_notes END
-     WHERE ticket_scan_file_id = v_file_id
-     RETURNING confirmed_at INTO v_confirmed_at;
+     WHERE competitor_ticket.ticket_scan_file.ticket_scan_file_id = v_file_id
+     RETURNING competitor_ticket.ticket_scan_file.confirmed_at INTO v_confirmed_at;
 
     INSERT INTO competitor_ticket.audit_event (event_type, entity_name, entity_id, source_ticket_key, user_id, event_timestamp, old_values_json, new_values_json, event_details_json)
     VALUES ('SCAN_FILE_CONFIRMED', 'ticket_scan_file', v_file_id, v_source_ticket_key, p_confirmed_by_user_id, NOW(),
@@ -206,8 +207,8 @@ $$;
 def main():
     print("Running migration v3 (scan file PostgreSQL functions)...")
     with engine.begin() as conn:
-        conn.exec_driver_sql(SQL_REPLACE)
-        conn.exec_driver_sql(SQL_CONFIRM)
+        conn.execute(text(SQL_REPLACE))
+        conn.execute(text(SQL_CONFIRM))
     print("Migration v3 completed. Functions deployed:")
     print("  - competitor_ticket.fn_replace_ticket_scan_file")
     print("  - competitor_ticket.fn_confirm_ticket_scan_file")
