@@ -4,29 +4,37 @@ import { searchTicketsApi } from '../services/api'
 import DataTable from '../ui/DataTable'
 import StatusBadge from '../ui/StatusBadge'
 
+const PAGE_SIZE = 50
+
 export default function TicketsPage() {
   const [rows, setRows] = useState([])
   const [meta, setMeta] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [page, setPage] = useState(1)
   const [filters, setFilters] = useState({
     sourceBusinessCode: '', sourceStoreCode: '',
     sourceTicketKey: '', sourceStatusCode: '', scanStatus: '',
     sourceTicketDateFrom: '', sourceTicketDateTo: '',
   })
 
-  const load = async () => {
+  const load = async (p) => {
     setLoading(true)
     try {
-      const params = Object.fromEntries(Object.entries({ ...filters, page: 1, pageSize: 50 }).filter(([,v]) => v !== '' && v !== null && v !== undefined))
+      const params = Object.fromEntries(Object.entries({ ...filters, page: p, pageSize: PAGE_SIZE }).filter(([,v]) => v !== '' && v !== null && v !== undefined))
       const res = await searchTicketsApi(params)
       setRows(res.data?.data || [])
       setMeta(res.data?.meta || null)
+      setPage(p)
     } finally {
       setLoading(false)
     }
   }
 
-  useEffect(() => { load() }, [])
+  useEffect(() => { load(1) }, [])
+
+  const search = () => load(1)
+  const prev = () => load(page - 1)
+  const next = () => load(page + 1)
 
   const setF = (k) => (e) => setFilters((s) => ({ ...s, [k]: e.target.value }))
 
@@ -57,10 +65,18 @@ export default function TicketsPage() {
         </select>
         <input type="date" value={filters.sourceTicketDateFrom} onChange={setF('sourceTicketDateFrom')} />
         <input type="date" value={filters.sourceTicketDateTo} onChange={setF('sourceTicketDateTo')} />
-        <button className="btn" onClick={load}>Buscar</button>
+        <button className="btn" onClick={search}>Buscar</button>
       </div>
       {loading ? <p>Cargando...</p> : <DataTable columns={columns} rows={rows} emptyMessage="No se encontraron tickets" />}
-      {meta && <p className="muted">Total: {meta.totalRecords} tickets</p>}
+      {meta && (
+        <div className="row mt-16" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+          <span className="muted">Total: {meta.totalRecords} tickets — Pág {meta.page} de {meta.totalPages}</span>
+          <div className="row gap-8">
+            <button className="btn btn-secondary btn-sm" disabled={page <= 1} onClick={prev}>Anterior</button>
+            <button className="btn btn-secondary btn-sm" disabled={page >= meta.totalPages} onClick={next}>Siguiente</button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
