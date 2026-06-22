@@ -76,6 +76,10 @@ export function listBatchesApi() {
   return api.get('/integration/batches', authHeaders())
 }
 
+export function runImportApi() {
+  return api.post('/integration/import', {}, authHeaders())
+}
+
 export function getBatchApi(batchId) {
   return api.get(`/integration/batches/${batchId}`, authHeaders())
 }

@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../state/AuthContext'
-import { listBatchesApi } from '../services/api'
+import { listBatchesApi, runImportApi } from '../services/api'
 import DataTable from '../ui/DataTable'
 import StatusBadge from '../ui/StatusBadge'
 
@@ -9,12 +9,36 @@ export default function BatchesPage() {
   const { currentUser } = useAuth()
   const [rows, setRows] = useState([])
   const [error, setError] = useState('')
+  const [importing, setImporting] = useState(false)
+  const [importResult, setImportResult] = useState('')
 
-  useEffect(() => {
+  const load = useCallback(() => {
     listBatchesApi()
       .then((res) => setRows(res.data?.data || []))
       .catch((err) => setError(err?.response?.data?.detail || 'Error al cargar lotes'))
   }, [])
+
+  useEffect(() => { load() }, [load])
+
+  const handleImport = async () => {
+    setImporting(true)
+    setImportResult('')
+    try {
+      const res = await runImportApi()
+      const results = res.data?.data || []
+      if (!results.length) {
+        setImportResult('No se encontraron lotes pendientes.')
+      } else {
+        const lines = results.map((r) => `${r.batchCode}: ${r.status} (insertados=${r.inserted}, errores=${r.errors})`).join('; ')
+        setImportResult(`Procesado: ${lines}`)
+      }
+      load()
+    } catch (err) {
+      setImportResult(err?.response?.data?.detail || 'Error al ejecutar importación')
+    } finally {
+      setImporting(false)
+    }
+  }
 
   if (!['ADMIN', 'SUPERVISOR'].includes(currentUser?.roleCode)) {
     return <div className="page"><p>No tiene permisos para este modulo.</p></div>
@@ -22,7 +46,13 @@ export default function BatchesPage() {
 
   return (
     <div className="page">
-      <h1>Lotes de Integración</h1>
+      <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+        <h1 style={{ margin: 0 }}>Lotes de Integración</h1>
+        <button className="btn" disabled={importing} onClick={handleImport}>
+          {importing ? 'Importando...' : 'Importar ahora'}
+        </button>
+      </div>
+      {importResult && <p className="mt-16 info-box">{importResult}</p>}
       {error && <p className="error-text">{error}</p>}
       <DataTable
         columns={[

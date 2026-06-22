@@ -6,8 +6,18 @@ from app.schemas.security import SecurityContext
 from app.security.auth import get_current_context
 from app.services.security_service import require_admin
 from app.models.integration import IntegrationBatch, IntegrationFile, IntegrationError
+from app.services.importer_service import ImporterService
 
 router = APIRouter(prefix="/api/v1/integration", tags=["integration"])
+
+
+@router.post("/import")
+def run_import(db: Session = Depends(get_db), ctx: SecurityContext = Depends(get_current_context)):
+    if ctx.role_code not in {"ADMIN", "SUPERVISOR"}:
+        raise HTTPException(status_code=403, detail="FORBIDDEN")
+    svc = ImporterService(db)
+    results = svc.run_pending_batches()
+    return ApiResponse.ok(results)
 
 
 @router.get("/batches")
