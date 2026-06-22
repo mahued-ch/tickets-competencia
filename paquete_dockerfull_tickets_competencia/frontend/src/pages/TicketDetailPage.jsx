@@ -76,6 +76,7 @@ export default function TicketDetailPage() {
   }
 
   const handleViewFile = async () => {
+    if (!scanFile) return
     setMessage('')
     try {
       const blob = await fetchScanFileBlob(ticketId)

@@ -85,6 +85,17 @@ textarea, input, select, button { font: inherit; }
 .gap-8 { gap: 8px; }
 .muted { color: #6b7280; }
 
+.bar-chart { display: flex; flex-direction: column; gap: 6px; }
+.bar-row { display: flex; align-items: center; gap: 8px; }
+.bar-label { width: 100px; font-size: 13px; color: #374151; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; }
+.bar-track { flex: 1; height: 20px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; transition: width .4s; }
+.bar-fill-blue { background: #2563eb; }
+.bar-fill-green { background: #16a34a; }
+.bar-fill-amber { background: #d97706; }
+.bar-fill-gray { background: #6b7280; }
+.bar-count { width: 48px; font-size: 13px; font-weight: 600; text-align: right; flex-shrink: 0; }
+
 .breadcrumbs { font-size: 14px; margin-bottom: 16px; color: #6b7280; }
 .breadcrumbs a { color: #2563eb; }
 .breadcrumbs a:hover { text-decoration: underline; }

@@ -1,8 +1,23 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../state/AuthContext'
 import { getCoverageApi } from '../services/api'
-import DataTable from '../ui/DataTable'
-import StatusBadge from '../ui/StatusBadge'
+
+function BarChart({ data, labelKey, valueKey, color, maxName }) {
+  const max = Math.max(...data.map((r) => r[valueKey]), 1)
+  return (
+    <div className="bar-chart">
+      {data.map((r, i) => (
+        <div className="bar-row" key={i}>
+          <span className="bar-label" title={r[labelKey]}>{r[labelKey]}</span>
+          <div className="bar-track">
+            <div className={`bar-fill bar-fill-${color}`} style={{ width: `${(r[valueKey] / max) * 100}%` }} />
+          </div>
+          <span className="bar-count">{r[valueKey]}</span>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 export default function SupervisorDashboardPage() {
   const { currentUser } = useAuth()
@@ -35,39 +50,26 @@ export default function SupervisorDashboardPage() {
 
           <div className="grid two-cols mt-16">
             <div className="card">
-              <div className="section-title">Por Estatus de Origen</div>
-              <DataTable
-                columns={[
-                  { key: 'status', title: 'Estatus', render: (r) => <StatusBadge value={r.status} /> },
-                  { key: 'count', title: 'Cantidad' },
-                ]}
-                rows={Object.entries(data.byStatus || {}).map(([k, v]) => ({ id: k, status: k, count: v }))}
-                emptyMessage="Sin datos"
-              />
+              <div className="section-title">Por Cadena</div>
+              {data.byBusiness?.length ? (
+                <BarChart data={data.byBusiness} labelKey="businessCode" valueKey="ticketCount" color="blue" />
+              ) : <p className="muted">Sin datos</p>}
             </div>
             <div className="card">
-              <div className="section-title">Por Estatus Documental</div>
-              <DataTable
-                columns={[
-                  { key: 'status', title: 'Estatus', render: (r) => <StatusBadge value={r.status} /> },
-                  { key: 'count', title: 'Cantidad' },
-                ]}
-                rows={Object.entries(data.byScanStatus || {}).map(([k, v]) => ({ id: k, status: k, count: v }))}
-                emptyMessage="Sin datos"
-              />
+              <div className="section-title">Por Status Documental</div>
+              {data.byScanStatus ? (
+                <BarChart
+                  data={Object.entries(data.byScanStatus).map(([k, v]) => ({ status: k, count: v }))}
+                  labelKey="status" valueKey="count" color="green" />
+              ) : <p className="muted">Sin datos</p>}
             </div>
           </div>
 
           <div className="card mt-16">
             <div className="section-title">Por Tienda</div>
-            <DataTable
-              columns={[
-                { key: 'storeCode', title: 'Tienda' },
-                { key: 'ticketCount', title: 'Tickets' },
-              ]}
-              rows={data.byStore || []}
-              emptyMessage="Sin tiendas"
-            />
+            {data.byStore?.length ? (
+              <BarChart data={data.byStore} labelKey="storeCode" valueKey="ticketCount" color="amber" />
+            ) : <p className="muted">Sin datos</p>}
           </div>
         </>
       )}

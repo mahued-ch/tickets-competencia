@@ -128,6 +128,9 @@ def get_coverage_stats(db: Session, ctx: SecurityContext) -> dict:
     store_rows = db.query(TicketStore.store_code, sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).label("cnt")).group_by(TicketStore.store_code).order_by(sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).desc()).all()
     by_store = [{"storeCode": r.store_code, "ticketCount": r.cnt} for r in store_rows]
 
+    biz_rows = db.query(Ticket.source_business_code, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.source_business_code).order_by(sqlfunc.count(Ticket.ticket_id).desc()).all()
+    by_business = [{"businessCode": r.source_business_code, "ticketCount": r.cnt} for r in biz_rows]
+
     return {
         "totalTickets": total,
         "withFile": with_file,
@@ -136,6 +139,7 @@ def get_coverage_stats(db: Session, ctx: SecurityContext) -> dict:
         "byStatus": by_status,
         "byScanStatus": by_scan,
         "byStore": by_store,
+        "byBusiness": by_business,
     }
 
 
