@@ -6,6 +6,8 @@ from app.db.base import Base
 from uuid import uuid4
 from app.security.password import hash_password
 from scripts.migrate_v3_scan_file_functions import SQL_REPLACE, SQL_CONFIRM
+from scripts.migrate_v4_add_upc import SQL_ALTER_INBOUND, SQL_ALTER_TICKET
+from scripts.migrate_v5_add_as400_columns import SQL_STATEMENTS as SQL_V5
 
 DATABASE_URL = "postgresql+psycopg2://tickets_user:tickets_pass@localhost:5432/tickets_db"
 ENGINE = create_engine(DATABASE_URL, echo=False)
@@ -21,6 +23,10 @@ def _pg_schema():
             text("ALTER TABLE competitor_ticket.audit_event "
                  "ADD COLUMN IF NOT EXISTS ip_address VARCHAR(45)")
         )
+        conn.execute(text(SQL_ALTER_INBOUND))
+        conn.execute(text(SQL_ALTER_TICKET))
+        for sql in SQL_V5:
+            conn.execute(text(sql))
     yield
 
 

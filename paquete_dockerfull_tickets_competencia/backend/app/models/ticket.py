@@ -1,4 +1,4 @@
-from sqlalchemy import BigInteger, Boolean, Date, DateTime, ForeignKey, Numeric, String, Text, UniqueConstraint, func
+from sqlalchemy import BigInteger, Boolean, Date, DateTime, ForeignKey, Integer, Numeric, SmallInteger, String, Text, UniqueConstraint, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.base import Base
 
@@ -11,12 +11,17 @@ class Ticket(Base):
     )
 
     ticket_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-    source_ticket_code: Mapped[str] = mapped_column(String(30), nullable=False)
-    source_business_code: Mapped[str] = mapped_column(String(30), nullable=False)
+    source_ticket_code: Mapped[str] = mapped_column(String(35), nullable=False)
+    source_business_code: Mapped[str] = mapped_column(String(10), nullable=False)
     source_store_code: Mapped[str] = mapped_column(String(30), nullable=False)
     source_ticket_date: Mapped = mapped_column(Date, nullable=False)
+    source_ticket_time: Mapped[str | None] = mapped_column(String(8), nullable=True)
     source_ticket_key: Mapped[str] = mapped_column(String(120), nullable=False)
     source_status_code: Mapped[str | None] = mapped_column(String(10), nullable=True)
+    zone_code: Mapped[int | None] = mapped_column(SmallInteger, nullable=True)
+    terminal_code: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    subsidiary_code: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    user_code: Mapped[str | None] = mapped_column(String(10), nullable=True)
     source_header_payload: Mapped[str | None] = mapped_column(Text, nullable=True)
     batch_id: Mapped[int | None] = mapped_column(ForeignKey("competitor_ticket.integration_batch.batch_id"), nullable=True)
     scan_status: Mapped[str] = mapped_column(String(25), default="NO_FILE", nullable=False)
@@ -40,6 +45,12 @@ class TicketItem(Base):
     item_sequence: Mapped[int] = mapped_column(BigInteger, nullable=False)
     product_code: Mapped[str | None] = mapped_column(String(50), nullable=True)
     product_description: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    upc: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    department_code: Mapped[int | None] = mapped_column(SmallInteger, nullable=True)
+    sub_department_code: Mapped[int | None] = mapped_column(SmallInteger, nullable=True)
+    class_code: Mapped[int | None] = mapped_column(SmallInteger, nullable=True)
+    subclass_code: Mapped[int | None] = mapped_column(SmallInteger, nullable=True)
+    provider_code: Mapped[int | None] = mapped_column(Integer, nullable=True)
     source_item_payload: Mapped[str | None] = mapped_column(Text, nullable=True)
     quantity: Mapped[float | None] = mapped_column(Numeric(18, 4), nullable=True)
     unit_price: Mapped[float | None] = mapped_column(Numeric(18, 4), nullable=True)

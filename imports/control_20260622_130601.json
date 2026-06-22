@@ -1,0 +1,11 @@
+{
+  "batch_code":"20260622_130601",
+  "generated_at":"2026-06-22T13.06.01-06:00",
+  "source_system":"AS400",
+  "files":[
+    {"file_type":"HEADER","file_name":"header_20260622_130601.json","record_count":419},
+    {"file_type":"ITEM","file_name":"items_20260622_130601.json","record_count":8501},
+    {"file_type":"STORE","file_name":"stores_20260622_130601.json","record_count":746}
+  ],
+  "layout_version":"1.0"
+}

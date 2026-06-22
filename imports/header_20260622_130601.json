@@ -1,0 +1,839 @@
+[
+  {"source_ticket_code":"0043351181010172097960","source_business_code":"WALMART","source_store_code":"22453","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0043351181010172097960","DGHCOD":"WALMART","DGHSTR":22453,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":199,"DGHSUC":199,"DGHUSR":"U0199JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0083341284032472529362","source_business_code":"BAURRERA","source_store_code":"20589","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0083341284032472529362","DGHCOD":"BAURRERA","DGHSTR":20589,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":654,"DGHSUC":654,"DGHUSR":"U0654AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0083371084062472825542","source_business_code":"BAURRERA","source_store_code":"22067","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0083371084062472825542","DGHCOD":"BAURRERA","DGHSTR":22067,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":722,"DGHSUC":722,"DGHUSR":"U0722JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"01 06879","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"01 06879","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"012084556616236710274","source_business_code":"WALMART","source_store_code":"20680","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"012084556616236710274","DGHCOD":"WALMART","DGHSTR":20680,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":322,"DGHSUC":322,"DGHUSR":"U0322JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"014926334816517104622","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"014926334816517104622","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0170264856668038386277","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0170264856668038386277","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0183351783071672723125","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0183351783071672723125","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0193321482030172528113","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0193321482030172528113","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"019535740351861783520","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"019535740351861783520","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"02 06881","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"02 06881","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0253321981090672222050","source_business_code":"WALMART","source_store_code":"22232","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0253321981090672222050","DGHCOD":"WALMART","DGHSTR":22232,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":774,"DGHSUC":774,"DGHUSR":"U0774JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"02809","source_business_code":"BAURRERA","source_store_code":"20516","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"02809","DGHCOD":"BAURRERA","DGHSTR":20516,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":103,"DGHSUC":103,"DGHUSR":"U0103JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"02815","source_business_code":"BAURRERA","source_store_code":"20516","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"02815","DGHCOD":"BAURRERA","DGHSTR":20516,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":103,"DGHSUC":103,"DGHUSR":"U0103JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"02960622013700200282","source_business_code":"MSORIANA","source_store_code":"20524","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"02960622013700200282","DGHCOD":"MSORIANA","DGHSTR":20524,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":20,"DGHTDA":23,"DGHSUC":23,"DGHUSR":"U0023JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"03 06883","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"03 06883","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"03510622013501200333","source_business_code":"SORIANA","source_store_code":"20267","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"03510622013501200333","DGHCOD":"SORIANA","DGHSTR":20267,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":54,"DGHSUC":54,"DGHUSR":"U0054JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0353321686030272398050","source_business_code":"WALMART","source_store_code":"20291","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0353321686030272398050","DGHCOD":"WALMART","DGHSTR":20291,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":13,"DGHSUC":13,"DGHUSR":"U0013JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0373351284032472529342","source_business_code":"BAURRERA","source_store_code":"20589","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0373351284032472529342","DGHCOD":"BAURRERA","DGHSTR":20589,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":654,"DGHSUC":654,"DGHUSR":"U0654AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0393301586081972621338","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0393301586081972621338","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"04 06884","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"04 06884","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"041200477278794346137","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"041200477278794346137","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"041250975214394845194","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"041250975214394845194","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05 05563","source_business_code":"BAURRERA","source_store_code":"22047","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05 05563","DGHCOD":"BAURRERA","DGHSTR":22047,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":754,"DGHSUC":754,"DGHUSR":"U0754AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05 06885","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05 06885","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05229","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05229","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05230","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05230","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05231","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05231","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05232","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05232","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05239","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05239","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05240","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05240","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05241","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05241","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05249","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05249","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05251","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05251","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05252","source_business_code":"BAURRERA","source_store_code":"20771","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05252","DGHCOD":"BAURRERA","DGHSTR":20771,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05485","source_business_code":"WALMART","source_store_code":"20998","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05485","DGHCOD":"WALMART","DGHSTR":20998,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":670,"DGHSUC":670,"DGHUSR":"U0670AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"05764972957324593977","source_business_code":"BAURRERA","source_store_code":"21333","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"05764972957324593977","DGHCOD":"BAURRERA","DGHSTR":21333,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":118,"DGHSUC":118,"DGHUSR":"U0118JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0583331586081972621398","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0583331586081972621398","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"06 06882","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"06 06882","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0603381088052972195310","source_business_code":"BAURRERA","source_store_code":"22000","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0603381088052972195310","DGHCOD":"BAURRERA","DGHSTR":22000,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":734,"DGHSUC":734,"DGHUSR":"U0734JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0603391384012972520114","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0603391384012972520114","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0653341084062472825582","source_business_code":"BAURRERA","source_store_code":"22067","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0653341084062472825582","DGHCOD":"BAURRERA","DGHSTR":22067,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":722,"DGHSUC":722,"DGHUSR":"U0722JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0665446","source_business_code":"SUPERSANFR","source_store_code":"20667","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0665446","DGHCOD":"SUPERSANFR","DGHSTR":20667,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":644,"DGHSUC":644,"DGHUSR":"U0644JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0665447","source_business_code":"SUPERSANFR","source_store_code":"20667","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0665447","DGHCOD":"SUPERSANFR","DGHSTR":20667,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":644,"DGHSUC":644,"DGHUSR":"U0644JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0665448","source_business_code":"SUPERSANFR","source_store_code":"20667","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0665448","DGHCOD":"SUPERSANFR","DGHSTR":20667,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":644,"DGHSUC":644,"DGHUSR":"U0644JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0665449","source_business_code":"SUPERSANFR","source_store_code":"20667","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0665449","DGHCOD":"SUPERSANFR","DGHSTR":20667,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":644,"DGHSUC":644,"DGHUSR":"U0644JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0690244856668038386297","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0690244856668038386297","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"07 06851","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"07 06851","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0713381584030572725306","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0713381584030572725306","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0763311181010172027910","source_business_code":"WALMART","source_store_code":"22453","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0763311181010172027910","DGHCOD":"WALMART","DGHSTR":22453,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":199,"DGHSUC":199,"DGHUSR":"U0199JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"077649326503743135712","source_business_code":"BAURRERA","source_store_code":"20051","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"077649326503743135712","DGHCOD":"BAURRERA","DGHSTR":20051,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":77,"DGHSUC":77,"DGHUSR":"U0077AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"08 06849","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"08 06849","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"082004952634938312430","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"082004952634938312430","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0820254057626038310269","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0820254057626038310269","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09 06860","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09 06860","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0910214458666138882281","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0910214458666138882281","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09255848391767278931","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09255848391767278931","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"0932130975294894243234","source_business_code":"BAURRERA","source_store_code":"20600","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"0932130975294894243234","DGHCOD":"BAURRERA","DGHSTR":20600,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":166,"DGHSUC":166,"DGHUSR":"U0166JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09411","source_business_code":"BAURRERA","source_store_code":"21140","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09411","DGHCOD":"BAURRERA","DGHSTR":21140,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":91,"DGHSUC":91,"DGHUSR":"U0091JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09436","source_business_code":"BAURRERA","source_store_code":"21140","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09436","DGHCOD":"BAURRERA","DGHSTR":21140,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":91,"DGHSUC":91,"DGHUSR":"U0091JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09441","source_business_code":"BAURRERA","source_store_code":"21140","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09441","DGHCOD":"BAURRERA","DGHSTR":21140,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":91,"DGHSUC":91,"DGHUSR":"U0091JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09442","source_business_code":"BAURRERA","source_store_code":"21140","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09442","DGHCOD":"BAURRERA","DGHSTR":21140,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":91,"DGHSUC":91,"DGHUSR":"U0091JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09443","source_business_code":"BAURRERA","source_store_code":"21140","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09443","DGHCOD":"BAURRERA","DGHSTR":21140,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":91,"DGHSUC":91,"DGHUSR":"U0091JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09444","source_business_code":"BAURRERA","source_store_code":"21140","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09444","DGHCOD":"BAURRERA","DGHSTR":21140,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":91,"DGHSUC":91,"DGHUSR":"U0091JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"09633118384012972520134","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"09633118384012972520134","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1 02227","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1 02227","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1 04386","source_business_code":"WALMART","source_store_code":"20298","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1 04386","DGHCOD":"WALMART","DGHSTR":20298,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":239,"DGHSUC":239,"DGHUSR":"U0239JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1 07938","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1 07938","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1-00723","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1-00723","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1-01575","source_business_code":"BAURRERA","source_store_code":"21537","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1-01575","DGHCOD":"BAURRERA","DGHSTR":21537,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":266,"DGHSUC":266,"DGHUSR":"U0266JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1-356838212798309220603","source_business_code":"WALMART","source_store_code":"21045","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1-356838212798309220603","DGHCOD":"WALMART","DGHSTR":21045,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":147,"DGHSUC":147,"DGHUSR":"U0147JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1-4181012396434156369047","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1-4181012396434156369047","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1-451","source_business_code":"BAURRERA","source_store_code":"20808","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1-451","DGHCOD":"BAURRERA","DGHSTR":20808,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":130,"DGHSUC":130,"DGHUSR":"U0130JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"10  661270878262894643194","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"10  661270878262894643194","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"10 02237","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"10 02237","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"10 06859","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"10 06859","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"10 07947","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"10 07947","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"10-5246759423565843632700","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"10-5246759423565843632700","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1074583363131380108741","source_business_code":"WALMART","source_store_code":"22453","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1074583363131380108741","DGHCOD":"WALMART","DGHSTR":22453,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":199,"DGHSUC":199,"DGHUSR":"U0199JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"107699026515543739733","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"107699026515543739733","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"11  02238","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"11  02238","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"11  574916935898511942427","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"11  574916935898511942427","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"11 06858","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"11 06858","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"11 07948","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"11 07948","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1134533867150980407530","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1134533867150980407530","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"117619829573243969736","source_business_code":"BAURRERA","source_store_code":"21333","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"117619829573243969736","DGHCOD":"BAURRERA","DGHSTR":21333,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":34,"DGHTDA":118,"DGHSUC":118,"DGHUSR":"U0118AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"12 06850","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"12 06850","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"12 07949","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"12 07949","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"12 46","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"12 46","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"123331489037572425597","source_business_code":"BAURRERA","source_store_code":"22121","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"123331489037572425597","DGHCOD":"BAURRERA","DGHSTR":22121,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":630,"DGHSUC":630,"DGHUSR":"U0630JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"128787803975425659703","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"128787803975425659703","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"13  164916935898517902477","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"13  164916935898517902477","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"13 02240","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"13 02240","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"13 06855","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"13 06855","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"13 07950","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"13 07950","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"13 20","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"13 20","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1314513268164680902576","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1314513268164680902576","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1314543162150280977540","source_business_code":"BAURRERA","source_store_code":"20589","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1314543162150280977540","DGHCOD":"BAURRERA","DGHSTR":20589,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":654,"DGHSUC":654,"DGHUSR":"U0654JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1324593465183680301736","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1324593465183680301736","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"133301280030171508153","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"133301280030171508153","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1334583166190780309581","source_business_code":"BAURRERA","source_store_code":"22000","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1334583166190780309581","DGHCOD":"BAURRERA","DGHSTR":22000,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":734,"DGHSUC":734,"DGHUSR":"U0734JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"134946837888017704470","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"134946837888017704470","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"13930205366508000406227","source_business_code":"CASALEY","source_store_code":"22492","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"13930205366508000406227","DGHCOD":"CASALEY","DGHSTR":22492,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":133,"DGHSUC":133,"DGHUSR":"U0133JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"14  188757301939125346825","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"14  188757301939125346825","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"14 02241","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"14 02241","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"14 06854","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"14 06854","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"14 07951","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"14 07951","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"14 99","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"14 99","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"142014853676638214298","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"142014853676638214298","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1433391080002572720334","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1433391080002572720334","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"147699225573649788873","source_business_code":"BAURRERA","source_store_code":"20803","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"147699225573649788873","DGHCOD":"BAURRERA","DGHSTR":20803,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":659,"DGHSUC":659,"DGHUSR":"U0659AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"15 02242","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"15 02242","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"15 06853","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"15 06853","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"15 07952","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"15 07952","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"151290677244193755201","source_business_code":"BAURRERA","source_store_code":"22106","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"151290677244193755201","DGHCOD":"BAURRERA","DGHSTR":22106,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":200,"DGHSUC":200,"DGHUSR":"U0200JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1514563867150980407540","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1514563867150980407540","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"155413360141180401395","source_business_code":"WALMART","source_store_code":"20772","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"155413360141180401395","DGHCOD":"WALMART","DGHSTR":20772,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":160,"DGHSUC":160,"DGHUSR":"U0160AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"158727601959425758916","source_business_code":"WALMART","source_store_code":"20659","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"158727601959425758916","DGHCOD":"WALMART","DGHSTR":20659,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":100,"DGHTDA":176,"DGHSUC":176,"DGHUSR":"U0176JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"16  7647807301939125356875","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"16  7647807301939125356875","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"16 02243","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"16 02243","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"16 06852","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"16 06852","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"16 07953","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"16 07953","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"16 39","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"16 39","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"16188316708304056864","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"16188316708304056864","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"166848810719409324689","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"166848810719409324689","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"17 06856","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"17 06856","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"17 07954","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"17 07954","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"176828415789209947825","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"176828415789209947825","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"18   02245","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"18   02245","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"18 07955","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"18 07955","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"18 26","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"18 26","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"186848318747906300651","source_business_code":"BAURRERA","source_store_code":"20404","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"186848318747906300651","DGHCOD":"BAURRERA","DGHSTR":20404,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":114,"DGHSUC":114,"DGHUSR":"U0114AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1874543169183680301716","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1874543169183680301716","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1884573964163780403546","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1884573964163780403546","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1894533267180980001110","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1894533267180980001110","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":134,"DGHSUC":134,"DGHUSR":"U0134JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"19 02246","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"19 02246","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"19 06863","source_business_code":"WALMART","source_store_code":"20312","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"19 06863","DGHCOD":"WALMART","DGHSTR":20312,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":231,"DGHSUC":231,"DGHUSR":"U0231JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"19 07956","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"19 07956","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"19 82","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"19 82","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1923311080018072928196","source_business_code":"BAURRERA","source_store_code":"21899","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1923311080018072928196","DGHCOD":"BAURRERA","DGHSTR":21899,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":149,"DGHSUC":149,"DGHUSR":"U0149AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"1974513267150280802544","source_business_code":"BAURRERA","source_store_code":"20043","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"1974513267150280802544","DGHCOD":"BAURRERA","DGHSTR":20043,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":238,"DGHSUC":238,"DGHUSR":"U0238AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2  212210087826289463194","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2  212210087826289463194","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2 04087","source_business_code":"WALMART","source_store_code":"20298","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2 04087","DGHCOD":"WALMART","DGHSTR":20298,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":239,"DGHSUC":239,"DGHUSR":"U0239JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2 07939","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2 07939","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2-00724","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2-00724","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2-452","source_business_code":"BAURRERA","source_store_code":"20808","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2-452","DGHCOD":"BAURRERA","DGHSTR":20808,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":130,"DGHSUC":130,"DGHUSR":"U0130JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2-7328668219727409291663","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2-7328668219727409291663","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2-7698658012798309290623","source_business_code":"WALMART","source_store_code":"21045","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2-7698658012798309290623","DGHCOD":"WALMART","DGHSTR":21045,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":147,"DGHSUC":147,"DGHUSR":"U0147JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"20  6499446935898517972497","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"20  6499446935898517972497","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"20 02247","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"20 02247","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"20 07957","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"20 07957","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"20 68","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"20 68","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"200107126062209421501000076464","source_business_code":"SMART","source_store_code":"21168","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"200107126062209421501000076464","DGHCOD":"SMART","DGHSTR":21168,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":63,"DGHSUC":63,"DGHUSR":"U0063JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2040758648738580235","source_business_code":"BAURRERA","source_store_code":"20495","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2040758648738580235","DGHCOD":"BAURRERA","DGHSTR":20495,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":265,"DGHSUC":265,"DGHUSR":"U0265JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"204996737848217379405","source_business_code":"BAURRERA","source_store_code":"20793","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"204996737848217379405","DGHCOD":"BAURRERA","DGHSTR":20793,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":141,"DGHSUC":141,"DGHUSR":"U0141JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2097877601907425157840","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2097877601907425157840","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"21  6180204857676938780268","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"21  6180204857676938780268","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"21 02248","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"21 02248","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"21 16","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"21 16","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"21011229647445479425","source_business_code":"WALMART","source_store_code":"20772","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"21011229647445479425","DGHCOD":"WALMART","DGHSTR":20772,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":160,"DGHSUC":160,"DGHUSR":"U0160AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"22  9697827503939126356835","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"22  9697827503939126356835","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"22 02249","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"22 02249","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"22 17","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"22 17","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2202140477278794346157","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2202140477278794346157","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"221210562404598382016","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"221210562404598382016","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2249476637888017774460","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2249476637888017774460","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2282190376204594342036","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2282190376204594342036","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"23 02250","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"23 02250","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2342170479262294150104","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2342170479262294150104","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"234986534816317608043","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"234986534816317608043","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2352130479294394452204","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2352130479294394452204","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":184,"DGHSUC":184,"DGHUSR":"U0184JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2371012495496156761076","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2371012495496156761076","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"24  277649321515043168733","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"24  277649321515043168733","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"24 02251","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"24 02251","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"24 73","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"24 73","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"244986930817217708837","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"244986930817217708837","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":134,"DGHSUC":134,"DGHUSR":"U0134JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"249555844361261918321","source_business_code":"BAURRERA","source_store_code":"20057","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"249555844361261918321","DGHCOD":"BAURRERA","DGHSTR":20057,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":34,"DGHTDA":69,"DGHSUC":69,"DGHUSR":"U0069AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"25 02252","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"25 02252","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"253214037620459432406","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"253214037620459432406","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2532140376204594342046","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2532140376204594342046","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"256868519768808481886","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"256868519768808481886","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"26 02253","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"26 02253","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"264936933877410380854","source_business_code":"BAURRERA","source_store_code":"22106","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"264936933877410380854","DGHCOD":"BAURRERA","DGHSTR":22106,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":200,"DGHSUC":200,"DGHUSR":"U0200JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"27  7008638915757309594649","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"27  7008638915757309594649","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"27 02254","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"27 02254","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2721082897404656069454","source_business_code":"WALMART","source_store_code":"20291","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2721082897404656069454","DGHCOD":"WALMART","DGHSTR":20291,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":13,"DGHSUC":13,"DGHUSR":"U0013AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2732120273290794042587","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2732120273290794042587","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2752140871290894951033","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2752140871290894951033","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"275423465183680301716","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"275423465183680301716","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"278757308927025759430","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"278757308927025759430","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2874513161110980801522","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2874513161110980801522","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"291270070202093259502","source_business_code":"WALMART","source_store_code":"22453","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"291270070202093259502","DGHCOD":"WALMART","DGHSTR":22453,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":199,"DGHSUC":199,"DGHUSR":"U0199JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"294946935867017405638","source_business_code":"BAURRERA","source_store_code":"21407","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"294946935867017405638","DGHCOD":"BAURRERA","DGHSTR":21407,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":119,"DGHSUC":119,"DGHUSR":"U0119AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"2991022198426356134228","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"2991022198426356134228","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3  7488638313757309524619","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3  7488638313757309524619","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3 04388","source_business_code":"WALMART","source_store_code":"20298","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3 04388","DGHCOD":"WALMART","DGHSTR":20298,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":239,"DGHSUC":239,"DGHUSR":"U0239JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3 07940","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3 07940","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3-00725","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3-00725","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3-4871002396434156369097","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3-4871002396434156369097","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3-7778688012798309290693","source_business_code":"WALMART","source_store_code":"21045","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3-7778688012798309290693","DGHCOD":"WALMART","DGHSTR":21045,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":147,"DGHSUC":147,"DGHUSR":"U0147JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3001829990452756560221","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3001829990452756560221","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"301200373224698659291","source_business_code":"BAURRERA","source_store_code":"21845","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"301200373224698659291","DGHCOD":"BAURRERA","DGHSTR":21845,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":145,"DGHSUC":145,"DGHUSR":"U0145AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"305463665183480875349","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"305463665183480875349","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"310102295496156761096","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"310102295496156761096","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"310122796436256562335","source_business_code":"BAURRERA","source_store_code":"21906","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"310122796436256562335","DGHCOD":"BAURRERA","DGHSTR":21906,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":635,"DGHSUC":635,"DGHUSR":"U0635JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3104563265183680301706","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3104563265183680301706","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3113321182000972223319","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3113321182000972223319","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3125995649365261619507","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3125995649365261619507","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"314926639897617673427","source_business_code":"BAURRERA","source_store_code":"20719","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"314926639897617673427","DGHCOD":"BAURRERA","DGHSTR":20719,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":276,"DGHSUC":276,"DGHUSR":"U0276JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"316868919767409195633","source_business_code":"BAURRERA","source_store_code":"20793","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"316868919767409195633","DGHCOD":"BAURRERA","DGHSTR":20793,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":141,"DGHSUC":141,"DGHUSR":"U0141JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3185935048303361985971","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3185935048303361985971","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"328727906927025759450","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"328727906927025759450","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3345995647373161519900","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3345995647373161519900","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"336838415767409094603","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"336838415767409094603","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3375915249365461513824","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3375915249365461513824","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"342054656668036376247","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"342054656668036376247","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3472120074222594441155","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3472120074222594441155","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3475945340391061718981","source_business_code":"BAURRERA","source_store_code":"20589","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3475945340391061718981","DGHCOD":"BAURRERA","DGHSTR":20589,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":654,"DGHSUC":654,"DGHUSR":"U0654JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"34996332828711654499","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"34996332828711654499","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3509446130817517872857","source_business_code":"BAURRERA","source_store_code":"20600","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3509446130817517872857","DGHCOD":"BAURRERA","DGHSTR":20600,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":166,"DGHSUC":166,"DGHUSR":"U0166JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3513280030179548163","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3513280030179548163","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3553381584030572725376","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3553381584030572725376","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"356898615789209497835","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"356898615789209497835","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3585965740393761617982","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3585965740393761617982","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3595905146303361985921","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3595905146303361985921","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3655985346361761183341","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3655985346361761183341","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":184,"DGHSUC":184,"DGHUSR":"U0184JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3754503166190780309571","source_business_code":"BAURRERA","source_store_code":"22000","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3754503166190780309571","DGHCOD":"BAURRERA","DGHSTR":22000,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":734,"DGHSUC":734,"DGHUSR":"U0734JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"381210772214594143344","source_business_code":"BAURRERA","source_store_code":"20803","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"381210772214594143344","DGHCOD":"BAURRERA","DGHSTR":20803,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":659,"DGHSUC":659,"DGHUSR":"U0659AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"384916731898817406407","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"384916731898817406407","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"392044552634938382400","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"392044552634938382400","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"3935955740393761617992","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"3935955740393761617992","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"394996134816517174652","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"394996134816517174652","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4  7987817101939124396885","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4  7987817101939124396885","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4 04389","source_business_code":"WALMART","source_store_code":"20298","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4 04389","DGHCOD":"WALMART","DGHSTR":20298,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":239,"DGHSUC":239,"DGHUSR":"U0239JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4 07941","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4 07941","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4 19","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4 19","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":179,"DGHSUC":179,"DGHUSR":"U0179JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4-00726","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4-00726","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4-0442180974252394547108","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4-0442180974252394547108","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"407609126515543739713","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"407609126515543739713","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"412074856626433065422","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"412074856626433065422","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4121062491452956264329","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4121062491452956264329","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4141022890452956264309","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4141022890452956264309","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"416838512757709698629","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"416838512757709698629","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"416898415767403054643","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"416898415767403054643","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4171092092406956262033","source_business_code":"BAURRERA","source_store_code":"21333","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4171092092406956262033","DGHCOD":"BAURRERA","DGHSTR":21333,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":34,"DGHTDA":118,"DGHSUC":118,"DGHUSR":"U0118AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4180214758626438085452","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4180214758626438085452","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"426868810719409324669","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"426868810719409324669","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4281002699416356261074","source_business_code":"BAURRERA","source_store_code":"22000","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4281002699416356261074","DGHCOD":"BAURRERA","DGHSTR":22000,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":734,"DGHSUC":734,"DGHUSR":"U0734JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"428737802912425357877","source_business_code":"BAURRERA","source_store_code":"20502","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"428737802912425357877","DGHCOD":"BAURRERA","DGHSTR":20502,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":842,"DGHSUC":842,"DGHUSR":"U0842AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4361092494446156564098","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4361092494446156564098","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"437609122593646064953","source_business_code":"BAURRERA","source_store_code":"20837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"437609122593646064953","DGHCOD":"BAURRERA","DGHSTR":20837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":661,"DGHSUC":661,"DGHUSR":"U0661JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"445433566160680175818","source_business_code":"BAURRERA","source_store_code":"20600","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"445433566160680175818","DGHCOD":"BAURRERA","DGHSTR":20600,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":151,"DGHSUC":151,"DGHUSR":"U0151JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"452044753659536037295","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"452044753659536037295","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"452064059686131432660","source_business_code":"WALMART","source_store_code":"20659","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"452064059686131432660","DGHCOD":"WALMART","DGHSTR":20659,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":100,"DGHTDA":176,"DGHSUC":176,"DGHUSR":"U0176JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"454946137808218003455","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"454946137808218003455","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":667,"DGHSUC":667,"DGHUSR":"U0667AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4558638719777209996622","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4558638719777209996622","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4576","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4576","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4578","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4578","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4579","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4579","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4580","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4580","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4582","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4582","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4583","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4583","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4589","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4589","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4590","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4590","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4591","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4591","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4598","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4598","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4599","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4599","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4600","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4600","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4601","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4601","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"460102391446056921019","source_business_code":"BAURRERA","source_store_code":"20055","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"460102391446056921019","DGHCOD":"BAURRERA","DGHSTR":20055,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":38,"DGHSUC":38,"DGHUSR":"U0038JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4604","source_business_code":"BAURRERA","source_store_code":"20373","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4604","DGHCOD":"BAURRERA","DGHSTR":20373,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":260,"DGHSUC":260,"DGHUSR":"U0260JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"462024856626438085452","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"462024856626438085452","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"463381785050272123384","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"463381785050272123384","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"473331084062472825552","source_business_code":"BAURRERA","source_store_code":"22067","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"473331084062472825552","DGHCOD":"BAURRERA","DGHSTR":22067,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":722,"DGHSUC":722,"DGHUSR":"U0722JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4833118803071672793175","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4833118803071672793175","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"489555740351861713520","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"489555740351861713520","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"4941042990452756560201","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"4941042990452756560201","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"495483964163780473566","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"495483964163780473566","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5  7748698313757309524639","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5  7748698313757309524639","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5 07942","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5 07942","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5-00727","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5-00727","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5-6960204358616038185289","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5-6960204358616038185289","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5014503968140480904900","source_business_code":"WALMART","source_store_code":"20339","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5014503968140480904900","DGHCOD":"WALMART","DGHSTR":20339,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":43,"DGHSUC":43,"DGHUSR":"U0043AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5092140376212394943138","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5092140376212394943138","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5106769923555643337796","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5106769923555643337796","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"511280279294394452264","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"511280279294394452264","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":184,"DGHSUC":184,"DGHUSR":"U0184JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5175995541333861119998","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5175995541333861119998","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"520142295496156761016","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"520142295496156761016","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5276799528549243935632","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5276799528549243935632","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5325935144371861517943","source_business_code":"BAURRERA","source_store_code":"22000","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5325935144371861517943","DGHCOD":"BAURRERA","DGHSTR":22000,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":734,"DGHSUC":734,"DGHUSR":"U0734JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5346719126515543769733","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5346719126515543769733","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5366769225573643778853","source_business_code":"BAURRERA","source_store_code":"20803","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5366769225573643778853","DGHCOD":"BAURRERA","DGHSTR":20803,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":659,"DGHSUC":659,"DGHUSR":"U0659AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5506719820529643039752","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5506719820529643039752","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5586769721593643835981","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5586769721593643835981","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"560182499416356261064","source_business_code":"BAURRERA","source_store_code":"22000","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"560182499416356261064","DGHCOD":"BAURRERA","DGHSTR":22000,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":734,"DGHSUC":734,"DGHUSR":"U0734JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5606779629565043333525","source_business_code":"WALMART","source_store_code":"22232","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5606779629565043333525","DGHCOD":"WALMART","DGHSTR":22232,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":774,"DGHSUC":774,"DGHUSR":"U0774JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5616749629565043333535","source_business_code":"WALMART","source_store_code":"22232","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5616749629565043333535","DGHCOD":"WALMART","DGHSTR":22232,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":774,"DGHSUC":774,"DGHUSR":"U0774JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5685935844361261918391","source_business_code":"BAURRERA","source_store_code":"20057","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5685935844361261918391","DGHCOD":"BAURRERA","DGHSTR":20057,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":34,"DGHTDA":69,"DGHSUC":69,"DGHUSR":"U0069AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"576828717779409097665","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"576828717779409097665","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5836789521573143836793","source_business_code":"BAURRERA","source_store_code":"20589","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5836789521573143836793","DGHCOD":"BAURRERA","DGHSTR":20589,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":654,"DGHSUC":654,"DGHUSR":"U0654JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5851002296444356660083","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5851002296444356660083","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"586818719777209926632","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"586818719777209926632","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"586848719767409195663","source_business_code":"BAURRERA","source_store_code":"20793","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"586848719767409195663","DGHCOD":"BAURRERA","DGHSTR":20793,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":141,"DGHSUC":141,"DGHUSR":"U0141JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"590112994406356061196","source_business_code":"BAURRERA","source_store_code":"20803","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"590112994406356061196","DGHCOD":"BAURRERA","DGHSTR":20803,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":659,"DGHSUC":659,"DGHUSR":"U0659AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"590162393406156763086","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"590162393406156763086","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"5905985946321261712741","source_business_code":"WALMART","source_store_code":"20339","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"5905985946321261712741","DGHCOD":"WALMART","DGHSTR":20339,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":43,"DGHSUC":43,"DGHUSR":"U0043AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6  3385935242303261017991","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6  3385935242303261017991","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6 07943","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6 07943","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6-00728","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6-00728","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6-3655965641383761814992","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6-3655965641383761814992","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"603301982097771183042","source_business_code":"BAURRERA","source_store_code":"20063","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"603301982097771183042","DGHCOD":"BAURRERA","DGHSTR":20063,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":95,"DGHSUC":95,"DGHUSR":"U0095JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6070234951676638284268","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6070234951676638284268","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6090234857628738011258","source_business_code":"BAURRERA","source_store_code":"20589","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6090234857628738011258","DGHCOD":"BAURRERA","DGHSTR":20589,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":654,"DGHSUC":654,"DGHUSR":"U0654AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6109406535848717473858","source_business_code":"WALMART","source_store_code":"20291","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6109406535848717473858","DGHCOD":"WALMART","DGHSTR":20291,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":13,"DGHSUC":13,"DGHUSR":"U0013JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6200264552634938382480","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6200264552634938382480","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"629575249365461513804","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"629575249365461513804","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6340264657698738510018","source_business_code":"BAURRERA","source_store_code":"22067","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6340264657698738510018","DGHCOD":"BAURRERA","DGHSTR":22067,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":722,"DGHSUC":722,"DGHUSR":"U0722JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6348688711749209894687","source_business_code":"BAURRERA","source_store_code":"22000","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6348688711749209894687","DGHCOD":"BAURRERA","DGHSTR":22000,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":734,"DGHSUC":734,"DGHUSR":"U0734JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"634986636868617871018","source_business_code":"WALMART","source_store_code":"22453","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"634986636868617871018","DGHCOD":"WALMART","DGHSTR":22453,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":199,"DGHSUC":199,"DGHUSR":"U0199JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"635463267180980001120","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"635463267180980001120","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":134,"DGHSUC":134,"DGHUSR":"U0134JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"636858715739509124459","source_business_code":"BAURRERA","source_store_code":"22067","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"636858715739509124459","DGHCOD":"BAURRERA","DGHSTR":22067,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":722,"DGHSUC":722,"DGHUSR":"U0722JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"641260675262294140194","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"641260675262294140194","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6438698719777209996622","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6438698719777209996622","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6440284550606838482207","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6440284550606838482207","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6460294658666138812231","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6460294658666138812231","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6520294658666139852211","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6520294658666139852211","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6557897600905625146825","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6557897600905625146825","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6558608917781709291883","source_business_code":"BAURRERA","source_store_code":"21899","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6558608917781709291883","DGHCOD":"BAURRERA","DGHSTR":21899,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":149,"DGHSUC":149,"DGHUSR":"U0149AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"65743860171980706594","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"65743860171980706594","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":667,"DGHSUC":667,"DGHUSR":"U0667AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6590224151628038981238","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6590224151628038981238","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6600244751676638284298","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6600244751676638284298","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6600264556628138280068","source_business_code":"BAURRERA","source_store_code":"20803","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6600264556628138280068","DGHCOD":"BAURRERA","DGHSTR":20803,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":659,"DGHSUC":659,"DGHUSR":"U0659AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6640214057648138016477","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6640214057648138016477","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"664996031893213911473","source_business_code":"WALMART","source_store_code":"20295","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"664996031893213911473","DGHCOD":"WALMART","DGHSTR":20295,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":237,"DGHSUC":237,"DGHUSR":"U0237JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6670244358616038185209","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6670244358616038185209","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":667,"DGHSUC":667,"DGHUSR":"U0667AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6670254751676638284298","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6670254751676638284298","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6719476930847917179425","source_business_code":"BAURRERA","source_store_code":"20043","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6719476930847917179425","DGHCOD":"BAURRERA","DGHSTR":20043,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":238,"DGHSUC":238,"DGHUSR":"U0238AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6740284753659538087265","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6740284753659538087265","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"674986231857514255267","source_business_code":"WALMART","source_store_code":"20339","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"674986231857514255267","DGHCOD":"WALMART","DGHSTR":20339,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":43,"DGHSUC":43,"DGHUSR":"U0043AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6810204254628539424231","source_business_code":"BAURRERA","source_store_code":"21333","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6810204254628539424231","DGHCOD":"BAURRERA","DGHSTR":21333,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":118,"DGHSUC":118,"DGHUSR":"U0118JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6850224751628738387229","source_business_code":"BAURRERA","source_store_code":"20043","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6850224751628738387229","DGHCOD":"BAURRERA","DGHSTR":20043,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":238,"DGHSUC":238,"DGHUSR":"U0238AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"688737601907425147850","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"688737601907425147850","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6920214855659538087295","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6920214855659538087295","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"6920254753659538087225","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"6920254753659538087225","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"692044550606838482287","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"692044550606838482287","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"696838215789209427875","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"696838215789209427875","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"698757006969525748873","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"698757006969525748873","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7 02234","source_business_code":"WALMART","source_store_code":"21837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7 02234","DGHCOD":"WALMART","DGHSTR":21837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":174,"DGHSUC":174,"DGHUSR":"U0174AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7 07944","source_business_code":"WALMART","source_store_code":"20356","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7 07944","DGHCOD":"WALMART","DGHSTR":20356,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":121,"DGHTDA":232,"DGHSUC":232,"DGHUSR":"U0232AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7-00729","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7-00729","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7-9195995641383761814972","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7-9195995641383761814972","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"705463160151980672514","source_business_code":"BAURRERA","source_store_code":"20793","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"705463160151980672514","DGHCOD":"BAURRERA","DGHSTR":20793,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":141,"DGHSUC":141,"DGHUSR":"U0141JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"715413768126987258506","source_business_code":"WALMART","source_store_code":"20295","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"715413768126987258506","DGHCOD":"WALMART","DGHSTR":20295,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":237,"DGHSUC":237,"DGHUSR":"U0237JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"717669228585340977781","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"717669228585340977781","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7184628919767409195663","source_business_code":"BAURRERA","source_store_code":"20793","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7184628919767409195663","DGHCOD":"BAURRERA","DGHSTR":20793,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":141,"DGHSUC":141,"DGHUSR":"U0141JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"719505447373161519970","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"719505447373161519970","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"719565841386666529341","source_business_code":"BAURRERA","source_store_code":"20063","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"719565841386666529341","DGHCOD":"BAURRERA","DGHSTR":20063,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":95,"DGHSUC":95,"DGHUSR":"U0095JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"730152991414656230028","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"730152991414656230028","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7368668712737700181409","source_business_code":"WALMART","source_store_code":"20478","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7368668712737700181409","DGHCOD":"WALMART","DGHSTR":20478,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":249,"DGHSUC":249,"DGHUSR":"U0249AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"74486799322520243831772","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"74486799322520243831772","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7478628411719409394659","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7478628411719409394659","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7537867101989525840939","source_business_code":"WALMART","source_store_code":"20291","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7537867101989525840939","DGHCOD":"WALMART","DGHSTR":20291,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":13,"DGHSUC":13,"DGHUSR":"U0013AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7808668218727309999717","source_business_code":"WALMART","source_store_code":"22232","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7808668218727309999717","DGHCOD":"WALMART","DGHSTR":22232,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":774,"DGHSUC":774,"DGHUSR":"U0774JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"79013239243475666434","source_business_code":"WALMART","source_store_code":"22232","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"79013239243475666434","DGHCOD":"WALMART","DGHSTR":22232,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":774,"DGHSUC":774,"DGHUSR":"U0774JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"79367697251593643835911","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"79367697251593643835911","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7936779120575343732575","source_business_code":"WALMART","source_store_code":"20291","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7936779120575343732575","DGHCOD":"WALMART","DGHSTR":20291,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":13,"DGHSUC":13,"DGHUSR":"U0013AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"7978618512709409997739","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"7978618512709409997739","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":134,"DGHSUC":134,"DGHUSR":"U0134JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"798867821170930962272","source_business_code":"BAURRERA","source_store_code":"20057","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"798867821170930962272","DGHCOD":"BAURRERA","DGHSTR":20057,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":34,"DGHTDA":69,"DGHSUC":69,"DGHUSR":"U0069AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8  127629020515043138783","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8  127629020515043138783","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8-00730","source_business_code":"BAURRERA","source_store_code":"21091","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8-00730","DGHCOD":"BAURRERA","DGHSTR":21091,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":139,"DGHTDA":167,"DGHSUC":167,"DGHUSR":"U0167AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8-4629466137808217073495","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8-4629466137808217073495","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"808737703935725750865","source_business_code":"BAURRERA","source_store_code":"20719","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"808737703935725750865","DGHCOD":"BAURRERA","DGHSTR":20719,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":276,"DGHSUC":276,"DGHUSR":"U0276JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"814916738848616213604","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"814916738848616213604","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"814956831837217572437","source_business_code":"BAURRERA","source_store_code":"21432","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"814956831837217572437","DGHCOD":"BAURRERA","DGHSTR":21432,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":671,"DGHSUC":671,"DGHUSR":"U0671AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"820142098426356134228","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"820142098426356134228","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"821949623986717276829","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"821949623986717276829","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"825473869191080305552","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"825473869191080305552","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8279496930817217778827","source_business_code":"BAURRERA","source_store_code":"20342","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8279496930817217778827","DGHCOD":"BAURRERA","DGHSTR":20342,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":107,"DGHTDA":134,"DGHSUC":134,"DGHUSR":"U0134JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8287877903915325056665","source_business_code":"BAURRERA","source_store_code":"22067","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8287877903915325056665","DGHCOD":"BAURRERA","DGHSTR":22067,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":722,"DGHSUC":722,"DGHUSR":"U0722JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8309446837888017704410","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8309446837888017704410","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"839515341393761480972","source_business_code":"BAURRERA","source_store_code":"20793","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"839515341393761480972","DGHCOD":"BAURRERA","DGHSTR":20793,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":141,"DGHSUC":141,"DGHUSR":"U0141JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8419446837888017774460","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8419446837888017774460","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"844694363348165117104672","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"844694363348165117104672","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8569426231857517275257","source_business_code":"WALMART","source_store_code":"20339","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8569426231857517275257","DGHCOD":"WALMART","DGHSTR":20339,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":43,"DGHSUC":43,"DGHUSR":"U0043AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8578698819777209926602","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8578698819777209926602","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8614523762151980809534","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8614523762151980809534","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8629456838887215138429","source_business_code":"WALMART","source_store_code":"22247","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8629456838887215138429","DGHCOD":"WALMART","DGHSTR":22247,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":185,"DGHSUC":185,"DGHUSR":"U0185AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"864942633282871764489","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"864942633282871764489","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8687670099949825346887","source_business_code":"WALMART","source_store_code":"20680","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8687670099949825346887","DGHCOD":"WALMART","DGHSTR":20680,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":322,"DGHSUC":322,"DGHUSR":"U0322JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"87169124520243841722","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"87169124520243841722","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"87469325575943812937","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"87469325575943812937","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8809476439867017208679","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8809476439867017208679","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"885483460170380803778","source_business_code":"BAURRERA","source_store_code":"21906","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"885483460170380803778","DGHCOD":"BAURRERA","DGHSTR":21906,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":635,"DGHSUC":635,"DGHUSR":"U0635JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"891200871290794042507","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"891200871290794042507","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8919436332828717674419","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8919436332828717674419","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"89496643887914931874","source_business_code":"BAURRERA","source_store_code":"21845","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"89496643887914931874","DGHCOD":"BAURRERA","DGHSTR":21845,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":145,"DGHSUC":145,"DGHUSR":"U0145AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"895433669191080305562","source_business_code":"BAURRERA","source_store_code":"20949","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"895433669191080305562","DGHCOD":"BAURRERA","DGHSTR":20949,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":159,"DGHSUC":159,"DGHUSR":"U0159AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"8999436239848217102405","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"8999436239848217102405","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9  2182150878262894643194","source_business_code":"BAURRERA","source_store_code":"20776","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9  2182150878262894643194","DGHCOD":"BAURRERA","DGHSTR":20776,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":157,"DGHSUC":157,"DGHUSR":"U0157JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9-4231082596434156369097","source_business_code":"WALMART","source_store_code":"20350","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9-4231082596434156369097","DGHCOD":"WALMART","DGHSTR":20350,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":140,"DGHTDA":236,"DGHSUC":236,"DGHUSR":"U0236JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"907629323575843231790","source_business_code":"BAURRERA","source_store_code":"20793","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"907629323575843231790","DGHCOD":"BAURRERA","DGHSTR":20793,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":141,"DGHSUC":141,"DGHUSR":"U0141JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"913301284012975306150","source_business_code":"BAURRERA","source_store_code":"21407","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"913301284012975306150","DGHCOD":"BAURRERA","DGHSTR":21407,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":119,"DGHSUC":119,"DGHUSR":"U0119AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"915413169183682391786","source_business_code":"WALMART","source_store_code":"20315","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"915413169183682391786","DGHCOD":"WALMART","DGHSTR":20315,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":658,"DGHSUC":658,"DGHUSR":"U0658AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"915413769110585609596","source_business_code":"BAURRERA","source_store_code":"20055","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"915413769110585609596","DGHCOD":"BAURRERA","DGHSTR":20055,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":38,"DGHSUC":38,"DGHUSR":"U0038JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"917609022593643014953","source_business_code":"BAURRERA","source_store_code":"20837","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"917609022593643014953","DGHCOD":"BAURRERA","DGHSTR":20837,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":661,"DGHSUC":661,"DGHUSR":"U0661JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9267827502939925847895","source_business_code":"WALMART","source_store_code":"22222","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9267827502939925847895","DGHCOD":"WALMART","DGHSTR":22222,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":267,"DGHSUC":267,"DGHUSR":"U0267JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9337857302901025653890","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9337857302901025653890","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"934946439867017278619","source_business_code":"BAURRERA","source_store_code":"20751","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"934946439867017278619","DGHCOD":"BAURRERA","DGHSTR":20751,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":631,"DGHSUC":631,"DGHUSR":"U0631JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9457847905999425558894","source_business_code":"WALMART","source_store_code":"21148","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9457847905999425558894","DGHCOD":"WALMART","DGHSTR":21148,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":10,"DGHTDA":47,"DGHSUC":47,"DGHUSR":"U0047AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"951240570252894484292","source_business_code":"WALMART","source_store_code":"22232","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"951240570252894484292","DGHCOD":"WALMART","DGHSTR":22232,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":774,"DGHSUC":774,"DGHUSR":"U0774JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"960192398404157591057","source_business_code":"WALMART","source_store_code":"20317","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"960192398404157591057","DGHCOD":"WALMART","DGHSTR":20317,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":21,"DGHTDA":52,"DGHSUC":52,"DGHUSR":"U0052AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9697827500901025653890","source_business_code":"WALMART","source_store_code":"22215","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9697827500901025653890","DGHCOD":"WALMART","DGHSTR":22215,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":264,"DGHSUC":264,"DGHUSR":"U0264AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9727897400925125854985","source_business_code":"BAURRERA","source_store_code":"20057","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9727897400925125854985","DGHCOD":"BAURRERA","DGHSTR":20057,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":34,"DGHTDA":69,"DGHSUC":69,"DGHUSR":"U0069AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9737807801959425748996","source_business_code":"WALMART","source_store_code":"20659","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9737807801959425748996","DGHCOD":"WALMART","DGHSTR":20659,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":100,"DGHTDA":176,"DGHSUC":176,"DGHUSR":"U0176JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"978757509989725650738","source_business_code":"WALMART","source_store_code":"20303","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"978757509989725650738","DGHCOD":"WALMART","DGHSTR":20303,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":108,"DGHSUC":108,"DGHUSR":"U0108AD06","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"983391588082872023787","source_business_code":"BAURRERA","source_store_code":"20600","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"983391588082872023787","DGHCOD":"BAURRERA","DGHSTR":20600,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":151,"DGHSUC":151,"DGHUSR":"U0151JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9884533867180480109120","source_business_code":"BAURRERA","source_store_code":"20600","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9884533867180480109120","DGHCOD":"BAURRERA","DGHSTR":20600,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":48,"DGHTDA":166,"DGHSUC":166,"DGHUSR":"U0166JD20","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9895954493622619567","source_business_code":"WALMART","source_store_code":"20325","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9895954493622619567","DGHCOD":"WALMART","DGHSTR":20325,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":7,"DGHTDA":11,"DGHSUC":11,"DGHUSR":"U0011AD07","DGHSTS":"9"}}}
+,
+  {"source_ticket_code":"9896709820529643039752","source_business_code":"BAURRERA","source_store_code":"22540","source_ticket_date":"2026-06-22","source_ticket_time":"12:35:00","source_status_code":"9","payload":{"raw_fields":{"DGHTCK":"9896709820529643039752","DGHCOD":"BAURRERA","DGHSTR":22540,"DGHDAT":20260622,"DGHHRS":123500,"DGHZON":0,"DGHTDA":73,"DGHSUC":73,"DGHUSR":"U0073JD20","DGHSTS":"9"}}}
+]

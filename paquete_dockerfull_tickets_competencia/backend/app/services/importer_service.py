@@ -97,6 +97,37 @@ class ImporterService:
         batch.item_record_count = len(items)
         batch.store_record_count = len(stores)
 
+        # ── normalize items (fill missing fields) ────────────
+        seq_counter: dict[str, int] = {}
+        for item in items:
+            skey = self._build_key(item)
+            seq_counter[skey] = seq_counter.get(skey, 0) + 1
+            item.setdefault('source_item_sequence', seq_counter[skey])
+            item.setdefault('quantity', 1)
+            item.setdefault('line_amount', item.get('unit_price', 0))
+            item.setdefault('source_ticket_time', self._extract_raw_field(item, 'DGDHRS'))
+            if 'upc' not in item or item['upc'] is None:
+                raw_val = self._extract_raw_field(item, 'DGDUPC')
+                if raw_val is not None:
+                    item['upc'] = str(raw_val)
+            item.setdefault('department_code', self._extract_raw_field(item, 'DGDDPT'))
+            item.setdefault('sub_department_code', self._extract_raw_field(item, 'DGDSDP'))
+            item.setdefault('class_code', self._extract_raw_field(item, 'DGDCLS'))
+            item.setdefault('subclass_code', self._extract_raw_field(item, 'DGDSCL'))
+            item.setdefault('provider_code', self._extract_raw_field(item, 'DGDPRV'))
+
+        # ── normalize headers ─────────────────────────────────
+        for h in headers:
+            h.setdefault('source_ticket_time', self._extract_raw_field(h, 'DGHHRS'))
+            h.setdefault('zone_code', self._extract_raw_field(h, 'DGHZON'))
+            h.setdefault('terminal_code', self._extract_raw_field(h, 'DGHTDA'))
+            h.setdefault('subsidiary_code', self._extract_raw_field(h, 'DGHSUC'))
+            h.setdefault('user_code', self._extract_raw_field(h, 'DGHUSR'))
+
+        # ── normalize stores ──────────────────────────────────
+        for s in stores:
+            s.setdefault('source_ticket_time', self._extract_raw_field(s, 'DGIHRS'))
+
         # ── staging: insert into inbound tables ─────────────
         error_count = 0
         for h in headers:
@@ -109,7 +140,12 @@ class ImporterService:
                     source_store_code=h['source_store_code'],
                     source_ticket_date=datetime.fromisoformat(h['source_ticket_date']).date(),
                     source_ticket_key=skey,
+                    source_ticket_time=h.get('source_ticket_time'),
                     source_status_code=h.get('source_status_code'),
+                    zone_code=h.get('zone_code'),
+                    terminal_code=h.get('terminal_code'),
+                    subsidiary_code=h.get('subsidiary_code'),
+                    user_code=h.get('user_code'),
                     payload_json=json.dumps(h, ensure_ascii=False),
                 ))
             except Exception as e:
@@ -126,9 +162,16 @@ class ImporterService:
                     source_store_code=i['source_store_code'],
                     source_ticket_date=datetime.fromisoformat(i['source_ticket_date']).date(),
                     source_ticket_key=skey,
+                    source_ticket_time=i.get('source_ticket_time'),
                     source_item_sequence=i['source_item_sequence'],
                     product_code=i.get('product_code'),
                     product_description=i.get('product_description'),
+                    upc=i.get('upc'),
+                    department_code=i.get('department_code'),
+                    sub_department_code=i.get('sub_department_code'),
+                    class_code=i.get('class_code'),
+                    subclass_code=i.get('subclass_code'),
+                    provider_code=i.get('provider_code'),
                     quantity=i.get('quantity'),
                     unit_price=i.get('unit_price'),
                     line_amount=i.get('line_amount'),
@@ -148,6 +191,7 @@ class ImporterService:
                     source_store_code=s['source_store_code'],
                     source_ticket_date=datetime.fromisoformat(s['source_ticket_date']).date(),
                     source_ticket_key=skey,
+                    source_ticket_time=s.get('source_ticket_time'),
                     applies_to_store_code=s['applies_to_store_code'],
                     payload_json=json.dumps(s, ensure_ascii=False),
                 ))
@@ -173,7 +217,12 @@ class ImporterService:
                     source_store_code=h['source_store_code'],
                     source_ticket_date=datetime.fromisoformat(h['source_ticket_date']).date(),
                     source_ticket_key=skey,
+                    source_ticket_time=h.get('source_ticket_time'),
                     source_status_code=h.get('source_status_code'),
+                    zone_code=h.get('zone_code'),
+                    terminal_code=h.get('terminal_code'),
+                    subsidiary_code=h.get('subsidiary_code'),
+                    user_code=h.get('user_code'),
                     source_header_payload=json.dumps(h, ensure_ascii=False),
                     batch_id=batch.batch_id,
                     scan_status='NO_FILE',
@@ -188,6 +237,12 @@ class ImporterService:
                         item_sequence=i['source_item_sequence'],
                         product_code=i.get('product_code'),
                         product_description=i.get('product_description'),
+                        upc=i.get('upc'),
+                        department_code=i.get('department_code'),
+                        sub_department_code=i.get('sub_department_code'),
+                        class_code=i.get('class_code'),
+                        subclass_code=i.get('subclass_code'),
+                        provider_code=i.get('provider_code'),
                         quantity=i.get('quantity'),
                         unit_price=i.get('unit_price'),
                         line_amount=i.get('line_amount'),
@@ -242,6 +297,13 @@ class ImporterService:
         return {'batchCode': batch_code, 'status': 'ARCHIVED', 'inserted': inserted, 'skipped': skipped, 'errors': error_count}
 
     # ── helpers ─────────────────────────────────────────────
+
+    @staticmethod
+    def _extract_raw_field(obj: dict, field_name: str):
+        raw = obj.get('payload', {})
+        if isinstance(raw, dict):
+            return raw.get('raw_fields', {}).get(field_name)
+        return None
 
     @staticmethod
     def _build_key(obj: dict) -> str:
