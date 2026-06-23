@@ -9,4 +9,5 @@ backend/storage/files/
 paquete_dockerfull_tickets_competencia/backend/data/inbound/ARCHIVE/
 paquete_dockerfull_tickets_competencia/backend/data/inbound/ERROR/
 paquete_dockerfull_tickets_competencia/backend/storage/files/
+tickets/
 .DS_Store
