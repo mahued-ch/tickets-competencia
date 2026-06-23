@@ -46,12 +46,13 @@ describe('AppLayout', () => {
     expect(screen.queryByText('Usuarios')).not.toBeInTheDocument()
   })
 
-  it('shows all menu items including Usuarios for ADMIN', () => {
+  it('shows all menu items including Usuarios and Catálogos for ADMIN', () => {
     renderWithAuth({ currentUser: { roleCode: 'ADMIN', displayName: 'Admin', loginName: 'admin' } })
     expect(screen.getByText('Cobertura')).toBeInTheDocument()
     expect(screen.getByText('Lotes')).toBeInTheDocument()
     expect(screen.getByText('Auditoria')).toBeInTheDocument()
     expect(screen.getByText('Usuarios')).toBeInTheDocument()
+    expect(screen.getByText('Catálogos')).toBeInTheDocument()
   })
 
   it('displays user name and role in topbar', () => {
