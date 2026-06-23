@@ -1,5 +1,7 @@
+from pathlib import Path
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
+from sqlalchemy import text
 from sqlalchemy.orm import Session
 from app.db.session import get_db
 from app.security.auth import get_current_context
@@ -7,6 +9,7 @@ from app.schemas.security import SecurityContext
 from app.schemas.common import ApiResponse
 from app.models.user import AppRole, AppUser, AppUserStore
 from app.services.security_service import require_admin
+from app.core.config import get_settings
 
 router = APIRouter(prefix="/api/v1/admin", tags=["admin"])
 
@@ -209,3 +212,38 @@ def remove_store(user_id: int, store_code: str, db: Session = Depends(get_db), c
     db.delete(row)
     db.commit()
     return ApiResponse.ok({"message": "Store removed"})
+
+
+TABLES_TO_CLEAR = [
+    "competitor_ticket.ticket_scan_file",
+    "competitor_ticket.ticket_item",
+    "competitor_ticket.ticket_store",
+    "competitor_ticket.ticket",
+    "competitor_ticket.inbound_ticket_store",
+    "competitor_ticket.inbound_ticket_item",
+    "competitor_ticket.inbound_ticket_header",
+    "competitor_ticket.integration_error",
+    "competitor_ticket.integration_file",
+    "competitor_ticket.integration_batch",
+]
+
+
+@router.post("/clear-tickets")
+def clear_tickets(db: Session = Depends(get_db), ctx: SecurityContext = Depends(get_current_context)):
+    try:
+        require_admin(ctx)
+    except PermissionError:
+        raise HTTPException(status_code=403, detail="FORBIDDEN")
+
+    settings = get_settings()
+    for table in TABLES_TO_CLEAR:
+        db.execute(text(f"DELETE FROM {table}"))
+    db.commit()
+
+    for rel in [settings.archive_path, settings.error_path]:
+        d = Path(rel)
+        if d.exists():
+            for f in d.glob("*.json"):
+                f.unlink()
+
+    return ApiResponse.ok({"message": "Todos los tickets y lotes han sido eliminados."})

@@ -53,6 +53,10 @@ class TestCoverage:
         assert data['totalTickets'] == 1
         assert data['byStatus'].get('9') == 1
 
-    def test_coverage_forbidden_for_store_user(self, store_user_ctx, db_session):
-        with pytest.raises(PermissionError):
-            get_coverage_stats(db_session, store_user_ctx)
+    def test_coverage_for_store_user(self, store_user_ctx, db_session):
+        data = get_coverage_stats(db_session, store_user_ctx)
+        assert data['totalTickets'] == 0
+        assert data['byStatus'] == {}
+        assert data['byScanStatus'] == {}
+        assert data['byStore'] == []
+        assert data['byBusiness'] == []

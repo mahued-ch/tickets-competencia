@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../state/AuthContext'
-import { searchAuditEventsApi } from '../services/api'
+import { searchAuditEventsApi, clearTicketsApi } from '../services/api'
 import DataTable from '../ui/DataTable'
 import StatusBadge from '../ui/StatusBadge'
 
@@ -11,6 +11,9 @@ export default function AuditPage() {
   const [error, setError] = useState('')
   const [filters, setFilters] = useState({ eventType: '', entityName: '', sourceTicketKey: '' })
   const [page, setPage] = useState(1)
+  const [clearing, setClearing] = useState(false)
+  const [confirmClear, setConfirmClear] = useState(false)
+  const [clearMsg, setClearMsg] = useState('')
 
   function fetchData(p = page) {
     const params = { page: p, pageSize: 50 }
@@ -38,6 +41,36 @@ export default function AuditPage() {
     <div className="page">
       <h1>Auditoria de Eventos</h1>
       {error && <p className="error-text">{error}</p>}
+      {clearMsg && <p className={clearMsg.includes('éxito') ? 'success-text' : 'error-text'}>{clearMsg}</p>}
+
+      {currentUser?.roleCode === 'ADMIN' && (
+        <div className="row mb-16" style={{ justifyContent: 'flex-end' }}>
+          {!confirmClear ? (
+            <button className="btn btn-danger" onClick={() => setConfirmClear(true)}>Limpiar tickets y lotes</button>
+          ) : (
+            <div className="row gap-8">
+              <span className="muted">¿Eliminar todos los tickets y lotes?</span>
+              <button className="btn btn-danger btn-sm" disabled={clearing} onClick={async () => {
+                setClearing(true)
+                setClearMsg('')
+                try {
+                  await clearTicketsApi()
+                  setClearMsg('Datos eliminados con éxito.')
+                  setRows([])
+                  setMeta(null)
+                } catch (err) {
+                  setClearMsg(err?.response?.data?.detail || 'Error al limpiar datos.')
+                } finally {
+                  setClearing(false)
+                  setConfirmClear(false)
+                }
+              }}>{clearing ? 'Eliminando...' : 'Sí, eliminar'}</button>
+              <button className="btn btn-secondary btn-sm" onClick={() => setConfirmClear(false)}>Cancelar</button>
+            </div>
+          )}
+        </div>
+      )}
+
       <form className="filter-bar" onSubmit={handleSearch}>
         <input placeholder="Tipo evento" value={filters.eventType} onChange={(e) => setFilters({ ...filters, eventType: e.target.value })} />
         <input placeholder="Entidad" value={filters.entityName} onChange={(e) => setFilters({ ...filters, entityName: e.target.value })} />

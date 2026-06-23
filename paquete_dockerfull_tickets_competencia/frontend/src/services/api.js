@@ -136,6 +136,10 @@ export function deleteUserApi(userId) {
   return api.delete(`/admin/users/${userId}`, authHeaders())
 }
 
+export function clearTicketsApi() {
+  return api.post('/admin/clear-tickets', {}, authHeaders())
+}
+
 // ── Catalog APIs ────────────────────────────────────────────
 
 export function listCompetitorStoresApi() {
@@ -200,4 +204,52 @@ export function updateNearbyStoreApi(id, payload) {
 
 export function deleteNearbyStoreApi(id) {
   return api.delete(`/catalogs/nearby-stores/${id}`, authHeaders())
+}
+
+// ── Enrichment APIs ──────────────────────────────────────────
+
+export function triggerEnrichmentApi(ticketId) {
+  return api.post(`/tickets/${ticketId}/enrichment`, {}, authHeaders())
+}
+
+export function getEnrichmentPreviewApi(ticketId) {
+  return api.get(`/tickets/${ticketId}/enrichment-preview`, authHeaders())
+}
+
+export function updateEnrichmentItemsApi(ticketId, items) {
+  return api.put(`/tickets/${ticketId}/enrichment-items`, items, authHeaders())
+}
+
+export function confirmEnrichmentApi(ticketId, payload) {
+  return api.post(`/tickets/${ticketId}/enrichment-confirm`, payload, authHeaders())
+}
+
+export function rejectEnrichmentApi(ticketId, payload) {
+  return api.post(`/tickets/${ticketId}/enrichment-reject`, payload, authHeaders())
+}
+
+// ── Scan Ticket APIs ──────────────────────────────────────────
+
+export function createScanTicketApi(formData) {
+  const headers = {
+    ...authHeaders().headers,
+    'Content-Type': 'multipart/form-data'
+  }
+  return api.post('/scan-tickets', formData, { headers })
+}
+
+export function listScanTicketsApi(params) {
+  return api.get('/scan-tickets', { ...authHeaders(), params })
+}
+
+export function getScanTicketApi(ticketId) {
+  return api.get(`/scan-tickets/${ticketId}`, authHeaders())
+}
+
+export function updateScanTicketItemsApi(ticketId, payload) {
+  return api.put(`/scan-tickets/${ticketId}/items`, payload, authHeaders())
+}
+
+export function finalizeScanTicketApi(ticketId, payload) {
+  return api.post(`/scan-tickets/${ticketId}/finalize`, payload, authHeaders())
 }

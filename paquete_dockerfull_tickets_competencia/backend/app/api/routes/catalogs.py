@@ -1,4 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from fastapi.responses import PlainTextResponse
 from sqlalchemy.orm import Session
 from app.db.session import get_db
 from app.security.auth import get_current_context
@@ -20,6 +21,42 @@ def _check_admin(ctx: SecurityContext):
         require_admin(ctx)
     except PermissionError:
         raise HTTPException(status_code=403, detail="FORBIDDEN")
+
+
+# ── CSV Import / Template (must be before {id} routes) ──────────
+
+CATALOG_NAMES = {"competitor-stores", "chedraui-products", "competitor-mappings", "nearby-stores"}
+
+
+@router.get("/{catalog}/template")
+def download_template(catalog: str, svc: CatalogService = Depends(_get_svc), ctx: SecurityContext = Depends(get_current_context)):
+    _check_admin(ctx)
+    if catalog not in CATALOG_NAMES:
+        raise HTTPException(status_code=404, detail="UNKNOWN_CATALOG")
+    csv_content = svc.get_template_csv(catalog)
+    if csv_content is None:
+        raise HTTPException(status_code=404, detail="UNKNOWN_CATALOG")
+    return PlainTextResponse(content=csv_content, media_type="text/csv", headers={"Content-Disposition": f'attachment; filename="{catalog}.csv"'})
+
+
+@router.post("/{catalog}/import")
+def import_catalog_csv(catalog: str, file: UploadFile = File(...), svc: CatalogService = Depends(_get_svc), ctx: SecurityContext = Depends(get_current_context)):
+    _check_admin(ctx)
+    if catalog not in CATALOG_NAMES:
+        raise HTTPException(status_code=404, detail="UNKNOWN_CATALOG")
+    if not file.filename or not file.filename.endswith(".csv"):
+        raise HTTPException(status_code=400, detail="INVALID_FILE_TYPE")
+
+    try:
+        content = file.file.read().decode("utf-8-sig")
+    except Exception:
+        raise HTTPException(status_code=400, detail="INVALID_FILE_ENCODING")
+
+    try:
+        result = svc.import_csv(catalog, content)
+        return ApiResponse.ok(result)
+    except ValueError as ex:
+        raise HTTPException(status_code=400, detail=str(ex))
 
 
 # ── CompetitorStore ─────────────────────────────────────────

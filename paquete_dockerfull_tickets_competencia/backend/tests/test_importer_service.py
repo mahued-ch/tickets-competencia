@@ -148,6 +148,44 @@ class TestProcessBatchSuccess:
         assert db_session.query(Ticket).count() == 3
         assert db_session.query(IntegrationBatch).count() == 2
 
+    def test_pads_store_codes_below_1000(self, db_session, tmp_path):
+        svc = _make_service(db_session, tmp_path)
+        headers = [
+            {"source_ticket_code": "TKT003", "source_business_code": "BUS001", "source_store_code": "199", "source_ticket_date": "2026-06-23", "source_status_code": "9"},
+            {"source_ticket_code": "TKT004", "source_business_code": "BUS001", "source_store_code": "1000", "source_ticket_date": "2026-06-23", "source_status_code": "9"},
+        ]
+        items = [
+            {"source_ticket_code": "TKT003", "source_business_code": "BUS001", "source_store_code": "199", "source_ticket_date": "2026-06-23", "source_item_sequence": 1, "product_code": "P003", "quantity": 1, "unit_price": 10, "line_amount": 10},
+            {"source_ticket_code": "TKT004", "source_business_code": "BUS001", "source_store_code": "1000", "source_ticket_date": "2026-06-23", "source_item_sequence": 1, "product_code": "P004", "quantity": 2, "unit_price": 20, "line_amount": 40},
+        ]
+        stores = [
+            {"source_ticket_code": "TKT003", "source_business_code": "BUS001", "source_store_code": "199", "source_ticket_date": "2026-06-23", "applies_to_store_code": "199"},
+            {"source_ticket_code": "TKT003", "source_business_code": "BUS001", "source_store_code": "199", "source_ticket_date": "2026-06-23", "applies_to_store_code": "91"},
+            {"source_ticket_code": "TKT004", "source_business_code": "BUS001", "source_store_code": "1000", "source_ticket_date": "2026-06-23", "applies_to_store_code": "1000"},
+        ]
+
+        _write_json(svc.inbound, 'control_BATCH003.json', {"batchCode": "BATCH003", "createdAt": "2026-06-23T10:00:00Z"})
+        _write_json(svc.inbound, 'header_BATCH003.json', headers)
+        _write_json(svc.inbound, 'items_BATCH003.json', items)
+        _write_json(svc.inbound, 'stores_BATCH003.json', stores)
+
+        result = svc.process_batch('BATCH003')
+        assert result['status'] == 'ARCHIVED'
+        assert result['inserted'] == 2
+
+        # TKT003: source_store_code (competencia, 199) stays as-is; store_code (Chedraui, 199→0199, 91→0091)
+        t3 = db_session.query(Ticket).filter(Ticket.source_ticket_code == 'TKT003').first()
+        assert t3.source_store_code == '199'
+        assert t3.source_ticket_key == 'TKT003|BUS001|199|20260623'
+        assert len(t3.stores) == 2
+        for s in t3.stores:
+            assert s.store_code in ('0199', '0091')
+
+        # TKT004: source_store_code (competencia, 1000) stays "1000" (>= 1000)
+        t4 = db_session.query(Ticket).filter(Ticket.source_ticket_code == 'TKT004').first()
+        assert t4.source_store_code == '1000'
+        assert t4.source_ticket_key == 'TKT004|BUS001|1000|20260623'
+
 
 # ── Error scenarios ───────────────────────────────────────
 

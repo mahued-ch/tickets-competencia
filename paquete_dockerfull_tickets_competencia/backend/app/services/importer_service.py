@@ -100,6 +100,7 @@ class ImporterService:
         # ── normalize items (fill missing fields) ────────────
         seq_counter: dict[str, int] = {}
         for item in items:
+            # source_store_code = tienda competencia — se deja tal cual
             skey = self._build_key(item)
             seq_counter[skey] = seq_counter.get(skey, 0) + 1
             item.setdefault('source_item_sequence', seq_counter[skey])
@@ -118,6 +119,7 @@ class ImporterService:
 
         # ── normalize headers ─────────────────────────────────
         for h in headers:
+            # source_store_code = tienda competencia — se deja tal cual
             h.setdefault('source_ticket_time', self._extract_raw_field(h, 'DGHHRS'))
             h.setdefault('zone_code', self._extract_raw_field(h, 'DGHZON'))
             h.setdefault('terminal_code', self._extract_raw_field(h, 'DGHTDA'))
@@ -126,6 +128,9 @@ class ImporterService:
 
         # ── normalize stores ──────────────────────────────────
         for s in stores:
+            # source_store_code = tienda competencia — se deja tal cual
+            # applies_to_store_code = tienda Chedraui — se padea a 4 dígitos
+            s['applies_to_store_code'] = self._pad_chedraui_store(s['applies_to_store_code'])
             s.setdefault('source_ticket_time', self._extract_raw_field(s, 'DGIHRS'))
 
         # ── staging: insert into inbound tables ─────────────
@@ -188,11 +193,11 @@ class ImporterService:
                     batch_id=batch.batch_id,
                     source_ticket_code=s['source_ticket_code'],
                     source_business_code=s['source_business_code'],
-                    source_store_code=s['source_store_code'],
+                    source_store_code=s['source_store_code'],             # tienda competencia
                     source_ticket_date=datetime.fromisoformat(s['source_ticket_date']).date(),
                     source_ticket_key=skey,
                     source_ticket_time=s.get('source_ticket_time'),
-                    applies_to_store_code=s['applies_to_store_code'],
+                    applies_to_store_code=s['applies_to_store_code'],     # tienda Chedraui (padded)
                     payload_json=json.dumps(s, ensure_ascii=False),
                 ))
             except Exception as e:
@@ -251,7 +256,7 @@ class ImporterService:
                 for s in [x for x in stores if self._build_key(x) == skey]:
                     self.db.add(TicketStore(
                         ticket_id=ticket.ticket_id,
-                        store_code=s['applies_to_store_code'],
+                        store_code=s['applies_to_store_code'],  # tienda Chedraui (padded)
                     ))
 
                 # mark staging rows as processed
@@ -297,6 +302,14 @@ class ImporterService:
         return {'batchCode': batch_code, 'status': 'ARCHIVED', 'inserted': inserted, 'skipped': skipped, 'errors': error_count}
 
     # ── helpers ─────────────────────────────────────────────
+
+    @staticmethod
+    def _pad_chedraui_store(code: str) -> str:
+        """Zero-pad Chedraui store codes (< 1000) to 4 digits."""
+        code = code.strip() if code else ''
+        if code.isdigit() and len(code) < 4:
+            return code.zfill(4)
+        return code
 
     @staticmethod
     def _extract_raw_field(obj: dict, field_name: str):

@@ -64,7 +64,7 @@ export default function BatchDetailPage() {
           <DataTable columns={[
             { key: 'ticketId', title: 'ID' },
             { key: 'sourceBusinessCode', title: 'Cadena' },
-            { key: 'sourceStoreCode', title: 'Tienda' },
+            { key: 'sourceStoreCode', title: 'Tienda Comp.' },
             { key: 'sourceTicketKey', title: 'Llave' },
             { key: 'scanStatus', title: 'Status Archivo', render: (r) => <StatusBadge value={r.scanStatus} /> },
             { key: 'actions', title: '', render: (r) => <Link className="link-btn" to={`/tickets/${r.ticketId}`}>Ver</Link> },

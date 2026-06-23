@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
-from fastapi.responses import Response
+from fastapi.responses import FileResponse, Response
 from sqlalchemy.orm import Session
 from app.core.config import get_settings
 from app.db.session import get_db
@@ -76,5 +76,21 @@ def stream_scan_file(ticket_id: int, db: Session = Depends(get_db), ctx: Securit
             raise HTTPException(status_code=404, detail="SCAN_FILE_NOT_FOUND")
         content = storage.open_read(active.storagePath)
         return Response(content=content, media_type=active.mimeType, headers={"Content-Disposition": f'inline; filename="{active.fileName}"'})
+    except PermissionError:
+        raise HTTPException(status_code=403, detail="FORBIDDEN")
+
+
+@router.get("/{ticket_id}/scan-file/download")
+def download_scan_file(ticket_id: int, db: Session = Depends(get_db), ctx: SecurityContext = Depends(get_current_context)):
+    try:
+        active = ticket_service.get_active_scan_file(db, ctx, ticket_id)
+        if not active:
+            raise HTTPException(status_code=404, detail="SCAN_FILE_NOT_FOUND")
+        return FileResponse(
+            path=active.storagePath,
+            media_type=active.mimeType,
+            filename=active.fileName,
+            headers={"Content-Disposition": f'inline; filename="{active.fileName}"'},
+        )
     except PermissionError:
         raise HTTPException(status_code=403, detail="FORBIDDEN")

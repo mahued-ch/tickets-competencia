@@ -15,6 +15,10 @@ class Settings(BaseSettings):
     max_upload_bytes: int = 15 * 1024 * 1024
     allowed_extensions: str = "pdf,jpg,jpeg,png"
 
+    ocr_llm_provider: str = "openai"
+    ocr_llm_model: str = "gpt-4o-mini"
+    ocr_llm_api_key: str = ""
+
     model_config = SettingsConfigDict(env_file="../.env", extra="ignore")
 
     @property

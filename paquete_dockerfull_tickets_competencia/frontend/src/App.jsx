@@ -11,6 +11,10 @@ import UsersPage from './pages/UsersPage'
 import SupervisorDashboardPage from './pages/SupervisorDashboardPage'
 import AuditPage from './pages/AuditPage'
 import CatalogsPage from './pages/CatalogsPage'
+import EnrichmentReviewPage from './pages/EnrichmentReviewPage'
+import ScanTicketsPage from './pages/ScanTicketsPage'
+import ScanTicketNewPage from './pages/ScanTicketNewPage'
+import ScanTicketEditPage from './pages/ScanTicketEditPage'
 
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth()
@@ -40,6 +44,10 @@ export default function App() {
         <Route path="admin/users" element={<UsersPage />} />
         <Route path="audit" element={<AuditPage />} />
         <Route path="admin/catalogs" element={<CatalogsPage />} />
+        <Route path="tickets/:ticketId/enrichment-review" element={<EnrichmentReviewPage />} />
+        <Route path="scan-tickets" element={<ScanTicketsPage />} />
+        <Route path="scan-tickets/new" element={<ScanTicketNewPage />} />
+        <Route path="scan-tickets/:ticketId" element={<ScanTicketEditPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/dashboard" replace />} />
     </Routes>

@@ -1,10 +1,28 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react'
+import { useParams, Link } from 'react-router-dom'
 import { useAuth } from '../state/AuthContext'
-import { confirmScanFileApi, fetchScanFileBlob, getActiveScanFileApi, getTicketApi, getTicketItemsApi, getTicketStoresApi, uploadScanFileApi } from '../services/api'
+import { confirmScanFileApi, getActiveScanFileApi, getTicketApi, getTicketItemsApi, getTicketStoresApi, uploadScanFileApi } from '../services/api'
 import DataTable from '../ui/DataTable'
 import StatusBadge from '../ui/StatusBadge'
-import FileViewerModal from '../ui/FileViewerModal'
+
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1'
+
+function authToken() {
+  const token = localStorage.getItem('tickets_competencia_token')
+  if (token) return token
+  const demo = localStorage.getItem('tickets_competencia_demo_user')
+  if (demo) return null
+  return null
+}
+
+function scanImageUrl(ticketId) {
+  const base = `${API_BASE}/tickets/${ticketId}/scan-file/download`
+  const token = authToken()
+  if (token) return `${base}?token=${token}`
+  const demo = localStorage.getItem('tickets_competencia_demo_user')
+  if (demo) return `${base}?x-demo-user=${demo}`
+  return base
+}
 
 export default function TicketDetailPage() {
   const { ticketId } = useParams()
@@ -18,7 +36,33 @@ export default function TicketDetailPage() {
   const [uploading, setUploading] = useState(false)
   const [notes, setNotes] = useState('')
   const [selectedFile, setSelectedFile] = useState(null)
-  const [viewerBlob, setViewerBlob] = useState(null)
+  const [leftWidth, setLeftWidth] = useState(30)
+  const [isResizing, setIsResizing] = useState(false)
+  const splitRef = useRef(null)
+
+  const handleMouseDown = (e) => {
+    e.preventDefault()
+    setIsResizing(true)
+  }
+
+  useEffect(() => {
+    if (!isResizing) return
+    const handleMouseMove = (e) => {
+      if (!splitRef.current) return
+      const rect = splitRef.current.getBoundingClientRect()
+      let pct = ((e.clientX - rect.left) / rect.width) * 100
+      if (pct < 20) pct = 20
+      if (pct > 50) pct = 50
+      setLeftWidth(pct)
+    }
+    const handleMouseUp = () => setIsResizing(false)
+    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener('mouseup', handleMouseUp)
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('mouseup', handleMouseUp)
+    }
+  }, [isResizing])
 
   const load = async () => {
     setLoading(true)
@@ -75,17 +119,6 @@ export default function TicketDetailPage() {
     }
   }
 
-  const handleViewFile = async () => {
-    if (!scanFile) return
-    setMessage('')
-    try {
-      const blob = await fetchScanFileBlob(ticketId)
-      setViewerBlob(blob)
-    } catch (err) {
-      setMessage('No fue posible visualizar el archivo')
-    }
-  }
-
   if (loading) return <div className="page"><p>Cargando detalle...</p></div>
   if (!detail?.ticket) return <div className="page"><p>No se encontro el ticket</p><p className="error-text">{message}</p></div>
 
@@ -138,17 +171,34 @@ export default function TicketDetailPage() {
 
       <div className="card mt-16">
         <div className="section-title">Archivo escaneado</div>
+
         {!scanFile ? (
           <p className="muted">Este ticket no tiene archivo escaneado.</p>
         ) : (
-          <div className="stack-sm">
-            <div><strong>Archivo:</strong> {scanFile.fileName}</div>
-            <div><strong>Versión:</strong> {scanFile.versionNumber}</div>
-            <div><strong>MimeType:</strong> {scanFile.mimeType}</div>
-            <div><strong>Confirmado:</strong> {scanFile.isConfirmed ? 'Sí' : 'No'}</div>
-            <div className="row gap-8">
-              <button className="btn btn-secondary" onClick={handleViewFile}>Ver archivo</button>
-              {canConfirm && <button className="btn btn-success" onClick={handleConfirm}>Confirmar</button>}
+          <div className="enrichment-split" ref={splitRef} style={isResizing ? { userSelect: 'none' } : undefined}>
+            <div className="enrichment-left" style={{ width: `${leftWidth}%` }}>
+              <div className="stack-sm">
+                <div><strong>Archivo:</strong> {scanFile.fileName}</div>
+                <div><strong>Versión:</strong> {scanFile.versionNumber}</div>
+                <div><strong>MimeType:</strong> {scanFile.mimeType}</div>
+                <div><strong>Confirmado:</strong> {scanFile.isConfirmed ? 'Sí' : 'No'}</div>
+                <div className="row gap-8 mt-16">
+                  {canConfirm && <button className="btn btn-success" onClick={handleConfirm}>Confirmar</button>}
+                  {scanFile.isConfirmed && (
+                    <Link to={`/tickets/${ticketId}/enrichment-review`} className="btn">Enriquecer</Link>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <div className="enrichment-divider" onMouseDown={handleMouseDown} />
+
+            <div className="enrichment-right" style={{ width: `${100 - leftWidth}%` }}>
+              <img
+                src={scanImageUrl(ticketId)}
+                alt={scanFile.fileName}
+                className="enrichment-image"
+              />
             </div>
           </div>
         )}
@@ -167,14 +217,6 @@ export default function TicketDetailPage() {
 
         {message && <p className="mt-16 info-box">{message}</p>}
       </div>
-      {viewerBlob && (
-        <FileViewerModal
-          blob={viewerBlob}
-          fileName={scanFile?.fileName}
-          mimeType={scanFile?.mimeType}
-          onClose={() => setViewerBlob(null)}
-        />
-      )}
     </div>
   )
 }

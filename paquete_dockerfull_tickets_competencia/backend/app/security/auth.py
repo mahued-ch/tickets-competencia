@@ -1,4 +1,4 @@
-from fastapi import Depends, Header, HTTPException
+from fastapi import Depends, Header, HTTPException, Query
 from sqlalchemy.orm import Session
 from app.db.session import get_db
 from app.models.user import AppUser
@@ -14,10 +14,13 @@ def get_current_context(
     db: Session = Depends(get_db),
     authorization: str | None = Header(default=None, alias="Authorization"),
     x_demo_user: str | None = Header(default=None, alias="X-Demo-User"),
+    token_query: str | None = Query(default=None, alias="token"),
 ):
     token: str | None = None
     if authorization and authorization.startswith("Bearer "):
         token = authorization[len("Bearer "):]
+    if not token and token_query:
+        token = token_query
 
     if token:
         ctx = resolve_token(token)

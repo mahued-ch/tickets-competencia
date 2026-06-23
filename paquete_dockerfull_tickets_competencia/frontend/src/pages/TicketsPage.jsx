@@ -41,7 +41,7 @@ export default function TicketsPage() {
   const columns = [
     { key: 'ticketId', title: 'ID' },
     { key: 'sourceBusinessCode', title: 'Cadena' },
-    { key: 'sourceStoreCode', title: 'Tienda' },
+    { key: 'sourceStoreCode', title: 'Tienda Comp.' },
     { key: 'sourceTicketKey', title: 'Llave Origen' },
     { key: 'sourceStatusCode', title: 'Status Origen' },
     { key: 'scanStatus', title: 'Status Archivo', render: (r) => <StatusBadge value={r.scanStatus} /> },
@@ -54,7 +54,7 @@ export default function TicketsPage() {
       <h1>Tickets</h1>
       <div className="filter-bar">
         <input placeholder="Cadena" value={filters.sourceBusinessCode} onChange={setF('sourceBusinessCode')} />
-        <input placeholder="Tienda" value={filters.sourceStoreCode} onChange={setF('sourceStoreCode')} />
+        <input placeholder="Tienda Comp." value={filters.sourceStoreCode} onChange={setF('sourceStoreCode')} />
         <input placeholder="Llave origen" value={filters.sourceTicketKey} onChange={setF('sourceTicketKey')} />
         <input placeholder="Status origen" value={filters.sourceStatusCode} onChange={setF('sourceStatusCode')} />
         <select value={filters.scanStatus} onChange={setF('scanStatus')}>
@@ -63,9 +63,12 @@ export default function TicketsPage() {
           <option value="FILE_UPLOADED">FILE_UPLOADED</option>
           <option value="FILE_CONFIRMED">FILE_CONFIRMED</option>
         </select>
-        <input type="date" value={filters.sourceTicketDateFrom} onChange={setF('sourceTicketDateFrom')} />
-        <input type="date" value={filters.sourceTicketDateTo} onChange={setF('sourceTicketDateTo')} />
         <button className="btn" onClick={search}>Buscar</button>
+        <div className="filter-date-range">
+          <input type="date" value={filters.sourceTicketDateFrom} onChange={setF('sourceTicketDateFrom')} />
+          <span>—</span>
+          <input type="date" value={filters.sourceTicketDateTo} onChange={setF('sourceTicketDateTo')} />
+        </div>
       </div>
       {loading ? <p>Cargando...</p> : <DataTable columns={columns} rows={rows} emptyMessage="No se encontraron tickets" />}
       {meta && (

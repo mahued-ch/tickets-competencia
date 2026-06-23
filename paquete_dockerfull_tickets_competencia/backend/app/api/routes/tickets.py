@@ -41,8 +41,6 @@ def search_tickets(
 
 @router.get("/coverage")
 def get_coverage(db: Session = Depends(get_db), ctx: SecurityContext = Depends(get_current_context)):
-    if ctx.role_code not in {"ADMIN", "SUPERVISOR"}:
-        raise HTTPException(status_code=403, detail="FORBIDDEN")
     data = ticket_service.get_coverage_stats(db, ctx)
     return ApiResponse.ok(data)
 

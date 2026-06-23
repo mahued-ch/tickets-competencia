@@ -33,7 +33,7 @@ describe('TicketsPage', () => {
     mockSearch.mockResolvedValue(mockResponse())
     render(<MemoryRouter><TicketsPage /></MemoryRouter>)
     expect(screen.getByPlaceholderText('Cadena')).toBeInTheDocument()
-    expect(screen.getByPlaceholderText('Tienda')).toBeInTheDocument()
+    expect(screen.getByPlaceholderText('Tienda Comp.')).toBeInTheDocument()
     expect(screen.getByPlaceholderText('Llave origen')).toBeInTheDocument()
     expect(screen.getByText('Buscar')).toBeInTheDocument()
   })

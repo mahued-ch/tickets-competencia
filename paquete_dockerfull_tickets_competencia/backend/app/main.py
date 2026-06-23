@@ -11,6 +11,9 @@ from app.api.routes.admin import router as admin_router
 from app.api.routes.auth_route import router as auth_router
 from app.api.routes.audit import router as audit_router
 from app.api.routes.catalogs import router as catalogs_router
+from app.api.routes.ocr import router as ocr_router
+from app.api.routes.enrichment import router as enrichment_router
+from app.api.routes.scan_tickets import router as scan_tickets_router
 
 settings = get_settings()
 configure_logging()
@@ -26,3 +29,6 @@ app.include_router(admin_router)
 app.include_router(auth_router)
 app.include_router(audit_router)
 app.include_router(catalogs_router)
+app.include_router(ocr_router)
+app.include_router(enrichment_router)
+app.include_router(scan_tickets_router)

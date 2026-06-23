@@ -17,4 +17,3 @@ echo  Frontend: http://localhost:5173/login
 echo  Backend:  http://localhost:8000/docs
 echo ========================================
 echo.
-pause

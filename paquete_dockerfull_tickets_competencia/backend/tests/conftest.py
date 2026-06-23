@@ -1,7 +1,8 @@
 import pytest
 from datetime import date
 from fastapi.testclient import TestClient
-from sqlalchemy import BigInteger, Integer, create_engine, event
+from sqlalchemy import BigInteger, Integer, Text, JSON, create_engine, event
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import StaticPool
 from app.db.base import Base
@@ -12,6 +13,9 @@ from app.security.auth import get_current_context
 from app.models.user import AppRole, AppUser, AppUserStore
 from app.models.integration import IntegrationBatch
 from app.models.ticket import Ticket, TicketItem, TicketStore, TicketScanFile, AuditEvent
+from app.models.catalog import CompetitorStore, ChedrauiProduct, CompetitorProductMapping, NearbyStore
+from app.models.ocr import OcrResult
+from app.models.enrichment import TicketEnrichment
 from app.security.password import hash_password
 
 # ── in-memory SQLite for tests ──────────────────────────
@@ -31,6 +35,8 @@ def _prepare_sqlite(target, connection, **kw):
                 # SQLite autoincrement only works with INTEGER type, not BIGINT
                 if isinstance(column.type, BigInteger) and column.autoincrement and column.primary_key:
                     column.type = Integer()
+                if isinstance(column.type, JSONB):
+                    column.type = JSON()
 
 
 @pytest.fixture(autouse=True)
@@ -174,6 +180,24 @@ def client(db_session):
 @pytest.fixture
 def client_with_supervisor(db_session, seed_roles, seed_supervisor):
     ctx = _build_ctx(db_session, 'supervisor')
+
+    def _get_db():
+        yield db_session
+
+    def _get_ctx():
+        yield ctx
+
+    app.dependency_overrides[get_db] = _get_db
+    app.dependency_overrides[get_current_context] = _get_ctx
+    client = TestClient(app)
+    yield client
+    app.dependency_overrides.pop(get_db, None)
+    app.dependency_overrides.pop(get_current_context, None)
+
+
+@pytest.fixture
+def client_with_admin(db_session, seed_roles, seed_admin):
+    ctx = _build_ctx(db_session, 'admin')
 
     def _get_db():
         yield db_session

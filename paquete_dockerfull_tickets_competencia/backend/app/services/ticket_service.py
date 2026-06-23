@@ -111,25 +111,44 @@ def get_ticket_stores(db: Session, ctx: SecurityContext, ticket_id: int):
     return [TicketStoreDTO(ticketStoreId=s.ticket_store_id, ticketId=s.ticket_id, storeCode=s.store_code) for s in ticket.stores]
 
 
+def _coverage_base_query(db: Session, ctx: SecurityContext):
+    if ctx.role_code in {"ADMIN", "SUPERVISOR"}:
+        return db.query(Ticket), db.query(Ticket), None
+
+    store_codes = ctx.store_codes
+    if not store_codes:
+        return db.query(Ticket).filter(False), db.query(Ticket).filter(False), []
+    ticket_ids_subq = db.query(TicketStore.ticket_id).filter(TicketStore.store_code.in_(store_codes)).distinct().scalar_subquery()
+    return db.query(Ticket).filter(Ticket.ticket_id.in_(ticket_ids_subq)), db.query(Ticket).filter(Ticket.ticket_id.in_(ticket_ids_subq)), store_codes
+
+
 def get_coverage_stats(db: Session, ctx: SecurityContext) -> dict:
-    if ctx.role_code not in {"ADMIN", "SUPERVISOR"}:
-        raise PermissionError("Only ADMIN/SUPERVISOR can view coverage")
+    base_q, _, store_codes = _coverage_base_query(db, ctx)
 
-    total = db.query(sqlfunc.count(Ticket.ticket_id)).scalar() or 0
-    with_file = db.query(sqlfunc.count(Ticket.ticket_id)).filter(Ticket.has_scan_file == True).scalar() or 0
-    confirmed = db.query(sqlfunc.count(Ticket.ticket_id)).filter(Ticket.scan_status == "FILE_CONFIRMED").scalar() or 0
+    total = base_q.with_entities(sqlfunc.count(Ticket.ticket_id)).scalar() or 0
+    with_file = base_q.filter(Ticket.has_scan_file == True).with_entities(sqlfunc.count(Ticket.ticket_id)).scalar() or 0
+    confirmed = base_q.filter(Ticket.scan_status == "FILE_CONFIRMED").with_entities(sqlfunc.count(Ticket.ticket_id)).scalar() or 0
 
-    status_rows = db.query(Ticket.source_status_code, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.source_status_code).all()
-    by_status = {r.source_status_code or "NULL": r.cnt for r in status_rows}
+    if ctx.role_code in {"ADMIN", "SUPERVISOR"}:
+        status_rows = base_q.with_entities(Ticket.source_status_code, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.source_status_code).all()
+        by_status = {r.source_status_code or "NULL": r.cnt for r in status_rows}
 
-    scan_rows = db.query(Ticket.scan_status, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.scan_status).all()
-    by_scan = {r.scan_status: r.cnt for r in scan_rows}
+        scan_rows = base_q.with_entities(Ticket.scan_status, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.scan_status).all()
+        by_scan = {r.scan_status: r.cnt for r in scan_rows}
 
-    store_rows = db.query(TicketStore.store_code, sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).label("cnt")).group_by(TicketStore.store_code).order_by(sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).desc()).all()
-    by_store = [{"storeCode": r.store_code, "ticketCount": r.cnt} for r in store_rows]
+        store_q = db.query(TicketStore.store_code, sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).label("cnt"))
+        if store_codes:
+            store_q = store_q.filter(TicketStore.store_code.in_(store_codes))
+        store_rows = store_q.group_by(TicketStore.store_code).order_by(sqlfunc.count(sqlfunc.distinct(TicketStore.ticket_id)).desc()).all()
+        by_store = [{"storeCode": r.store_code, "ticketCount": r.cnt} for r in store_rows]
 
-    biz_rows = db.query(Ticket.source_business_code, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.source_business_code).order_by(sqlfunc.count(Ticket.ticket_id).desc()).all()
-    by_business = [{"businessCode": r.source_business_code, "ticketCount": r.cnt} for r in biz_rows]
+        biz_rows = base_q.with_entities(Ticket.source_business_code, sqlfunc.count(Ticket.ticket_id).label("cnt")).group_by(Ticket.source_business_code).order_by(sqlfunc.count(Ticket.ticket_id).desc()).all()
+        by_business = [{"businessCode": r.source_business_code, "ticketCount": r.cnt} for r in biz_rows]
+    else:
+        by_status = {}
+        by_scan = {}
+        by_store = []
+        by_business = []
 
     return {
         "totalTickets": total,
