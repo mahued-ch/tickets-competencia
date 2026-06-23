@@ -135,3 +135,69 @@ export function updateUserApi(userId, payload) {
 export function deleteUserApi(userId) {
   return api.delete(`/admin/users/${userId}`, authHeaders())
 }
+
+// ── Catalog APIs ────────────────────────────────────────────
+
+export function listCompetitorStoresApi() {
+  return api.get('/catalogs/competitor-stores', authHeaders())
+}
+
+export function createCompetitorStoreApi(payload) {
+  return api.post('/catalogs/competitor-stores', payload, authHeaders())
+}
+
+export function updateCompetitorStoreApi(id, payload) {
+  return api.put(`/catalogs/competitor-stores/${id}`, payload, authHeaders())
+}
+
+export function deleteCompetitorStoreApi(id) {
+  return api.delete(`/catalogs/competitor-stores/${id}`, authHeaders())
+}
+
+export function listChedrauiProductsApi() {
+  return api.get('/catalogs/chedraui-products', authHeaders())
+}
+
+export function createChedrauiProductApi(payload) {
+  return api.post('/catalogs/chedraui-products', payload, authHeaders())
+}
+
+export function updateChedrauiProductApi(id, payload) {
+  return api.put(`/catalogs/chedraui-products/${id}`, payload, authHeaders())
+}
+
+export function deleteChedrauiProductApi(id) {
+  return api.delete(`/catalogs/chedraui-products/${id}`, authHeaders())
+}
+
+export function listCompetitorMappingsApi() {
+  return api.get('/catalogs/competitor-mappings', authHeaders())
+}
+
+export function createCompetitorMappingApi(payload) {
+  return api.post('/catalogs/competitor-mappings', payload, authHeaders())
+}
+
+export function updateCompetitorMappingApi(id, payload) {
+  return api.put(`/catalogs/competitor-mappings/${id}`, payload, authHeaders())
+}
+
+export function deleteCompetitorMappingApi(id) {
+  return api.delete(`/catalogs/competitor-mappings/${id}`, authHeaders())
+}
+
+export function listNearbyStoresApi() {
+  return api.get('/catalogs/nearby-stores', authHeaders())
+}
+
+export function createNearbyStoreApi(payload) {
+  return api.post('/catalogs/nearby-stores', payload, authHeaders())
+}
+
+export function updateNearbyStoreApi(id, payload) {
+  return api.put(`/catalogs/nearby-stores/${id}`, payload, authHeaders())
+}
+
+export function deleteNearbyStoreApi(id) {
+  return api.delete(`/catalogs/nearby-stores/${id}`, authHeaders())
+}

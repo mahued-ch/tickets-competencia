@@ -10,6 +10,7 @@ import BatchDetailPage from './pages/BatchDetailPage'
 import UsersPage from './pages/UsersPage'
 import SupervisorDashboardPage from './pages/SupervisorDashboardPage'
 import AuditPage from './pages/AuditPage'
+import CatalogsPage from './pages/CatalogsPage'
 
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth()
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="integration/batches/:batchId" element={<BatchDetailPage />} />
         <Route path="admin/users" element={<UsersPage />} />
         <Route path="audit" element={<AuditPage />} />
+        <Route path="admin/catalogs" element={<CatalogsPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/dashboard" replace />} />
     </Routes>

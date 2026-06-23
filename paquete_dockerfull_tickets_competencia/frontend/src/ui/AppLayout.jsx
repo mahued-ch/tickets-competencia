@@ -19,6 +19,7 @@ export default function AppLayout() {
           {(role === 'ADMIN' || role === 'SUPERVISOR') && <NavLink to="/coverage">Cobertura</NavLink>}
           {(role === 'ADMIN' || role === 'SUPERVISOR') && <NavLink to="/integration/batches">Lotes</NavLink>}
           {role === 'ADMIN' && <NavLink to="/admin/users">Usuarios</NavLink>}
+          {role === 'ADMIN' && <NavLink to="/admin/catalogs">Catálogos</NavLink>}
           {(role === 'ADMIN' || role === 'SUPERVISOR') && <NavLink to="/audit">Auditoria</NavLink>}
         </nav>
       </aside>
